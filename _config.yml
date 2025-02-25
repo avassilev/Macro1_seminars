@@ -1,0 +1,56 @@
+# Book settings
+# Learn more at https://jupyterbook.org/customize/config.html
+
+title: Ръководство за упражнения по Макроикономика 1
+author: Андрей Василев
+logo: econ-textbook-logo.png
+
+# Force re-execution of notebooks on each build.
+# See https://jupyterbook.org/content/execute.html
+execute:
+  # execute_notebooks: force
+  execute_notebooks: "off"  # Prevent execution if using static files
+sphinx:
+  config:
+    language: bg
+    numfig: true  # Enables automatic numbering
+    myst_enable_extensions:
+      - amsmath
+      - dollarmath
+      - deflist
+      - html_admonition
+      - html_image
+    html_theme: quantecon_book_theme
+  extra_extensions:
+    - sphinx_exercise
+    - sphinx_proof
+
+
+# Define the name of the latex output file for PDF builds
+latex:
+  latex_documents:
+    targetname: Macro1_seminars.tex
+
+# Add a bibtex file so that we can create citations
+bibtex_bibfiles:
+  - Macro1_seminars.bib
+
+# Information about where the book exists on the web
+# repository:
+#   url: https://github.com/executablebooks/jupyter-book  # Online location of your book
+#   path_to_book: docs  # Optional path to your book, relative to the repository root
+#   branch: master  # Which branch of the repository should be used when creating links (optional)
+
+# Add GitHub buttons to your book
+# See https://jupyterbook.org/customize/config.html#add-a-link-to-your-repository
+html:
+#   use_issues_button: true
+#   use_repository_button: true
+  extra_css:
+    - _static/custom.css
+  extra_js:
+    - _static/custom.js
+
+##################################################################################
+
+
