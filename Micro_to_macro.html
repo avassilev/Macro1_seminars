@@ -1,0 +1,1162 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="bg" data-content_root="" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Основни микроикономически постановки и макроикономическите им следствия &#8212; Ръководство за упражнения по Макроикономика 1</title>
+    <script src="https://unpkg.com/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://unpkg.com/tippy.js@6.3.1/dist/tippy-bundle.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    
+        <script>
+            MathJax = {
+            loader: {load: ['[tex]/boldsymbol', '[tex]/textmacros']},
+            tex: {
+                packages: {'[+]': ['boldsymbol', 'textmacros']},
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                processEscapes: true,
+                macros: {
+                    "argmax" : "arg\\,max",
+                    "argmin" : "arg\\,min",
+                    "col"    : "col",
+                    "Span"   :  "span",
+                    "epsilon": "\\varepsilon",
+                    "EE": "\\mathbb{E}",
+                    "PP": "\\mathbb{P}",
+                    "RR": "\\mathbb{R}",
+                    "NN": "\\mathbb{N}",
+                    "ZZ": "\\mathbb{Z}",
+                    "aA": "\\mathcal{A}",
+                    "bB": "\\mathcal{B}",
+                    "cC": "\\mathcal{C}",
+                    "dD": "\\mathcal{D}",
+                    "eE": "\\mathcal{E}",
+                    "fF": "\\mathcal{F}",
+                    "gG": "\\mathcal{G}",
+                    "hH": "\\mathcal{H}",
+                }
+            },
+            svg: {
+                fontCache: 'global',
+                scale: 0.92,
+                displayAlign: "center",
+            },
+            };
+        </script>
+    
+    
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/quantecon-book-theme.css?digest=bd0785fbb14d8d2bd4d9ae501d79ed8d3bc089ec" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/exercise.css" />
+    <link rel="stylesheet" type="text/css" href="_static/proof.css" />
+    <link rel="stylesheet" type="text/css" href="_static/custom.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.4cbf315f70debaebd550c87a6162cf0f.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/sphinx_highlight.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script src="_static/scripts/quantecon-book-theme.js?digest=d9faaf6c4b57726f74ba012412af1f5681bdff87"></script>
+    <script src="_static/custom.js"></script>
+    <script src="_static/translations.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'Micro_to_macro';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Брутен вътрешен продукт и измерители на доход" href="GDP.html" />
+    <link rel="prev" title="Ръководство за упражнения по Макроикономика 1" href="intro.html" />
+
+<!-- Normal Meta Tags -->
+<meta name="author" context="Андрей Василев" />
+<meta name="keywords" content="" />
+<meta name="description" content=Основни микроикономически постановки и макроикономическите им следствия  Оптимален избор и потребителско търсене: предпочитания на Cobb-Douglas  Функция на поле />
+
+<!-- Twitter tags -->
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@" />
+<meta name="twitter:title" content="Основни микроикономически постановки и макроикономическите им следствия"/>
+<meta name="twitter:description" content="Основни микроикономически постановки и макроикономическите им следствия  Оптимален избор и потребителско търсене: предпочитания на Cobb-Douglas  Функция на поле">
+<meta name="twitter:creator" content="@">
+<meta name="twitter:image" content="">
+
+<!-- Opengraph tags -->
+<meta property="og:title" content="Основни микроикономически постановки и макроикономическите им следствия" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="None" />
+<meta property="og:image" content="" />
+<meta property="og:description" content="Основни микроикономически постановки и макроикономическите им следствия  Оптимален избор и потребителско търсене: предпочитания на Cobb-Douglas  Функция на поле" />
+<meta property="og:site_name" content="Ръководство за упражнения по Макроикономика 1" />
+<meta name="theme-color" content="#ffffff" />
+
+  </head>
+<body>
+
+<!-- Override QuantEcon theme colors -->
+
+    <span id="top"></span>
+
+    <div class="qe-wrapper">
+
+        <div class="qe-main">
+
+            <div class="qe-page" id=Micro_to_macro>
+
+                <div class="qe-page__toc">
+
+                    <div class="inner">
+
+                        
+                        <div class="qe-page__toc-header">
+                            On this page
+                        </div>
+
+
+                        <nav id="bd-toc-nav" class="qe-page__toc-nav">
+                            <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cobb-douglas">Оптимален избор и потребителско търсене: предпочитания на Cobb-Douglas</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#stone-geary">Оптимален избор и потребителско търсене: предпочитания на Stone-Geary</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Оптимален избор и потребителско търсене: транслог предпочитания</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Фирми и максимизиране на печалбата (1)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Фирми и максимизиране на печалбата (2)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Определяне на пазарните цени</a></li>
+</ul>
+                            <p class="logo">
+                                
+                                    
+                                    <a href="intro.html"><img src="_static/econ-textbook-logo.png" class="logo" alt="logo"></a>
+                                    
+                                
+                            </p>
+
+                            <p class="powered">Powered by <a href="https://jupyterbook.org/">Jupyter Book</a></p>
+
+                        </nav>
+
+                        <div class="qe-page__toc-footer">
+                            
+                            
+                            <p><a href="#top"><strong>Back to top</strong></a></p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="qe-page__header">
+
+                    <div class="qe-page__header-copy">
+
+                        <p class="qe-page__header-heading"><a href="intro.html">Ръководство за упражнения по Макроикономика 1</a></p>
+
+                        <p class="qe-page__header-subheading">Основни микроикономически постановки и макроикономическите им следствия</p>
+
+                    </div>
+                    <!-- length 2, since its a string and empty dict has length 2 - {} -->
+                        <p class="qe-page__header-authors" font-size="18">Андрей Василев</p>
+
+
+                </div> <!-- .page__header -->
+
+
+
+                
+                <main class="qe-page__content" role="main">
+                    
+                    <div>
+                        
+  <section class="tex2jax_ignore mathjax_ignore" id="id1">
+<h1>Основни микроикономически постановки и макроикономическите им следствия<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h1>
+<section id="cobb-douglas">
+<h2>Оптимален избор и потребителско търсене: предпочитания на Cobb-Douglas<a class="headerlink" href="#cobb-douglas" title="Permalink to this heading">#</a></h2>
+<p>Функция на полезност:</p>
+<div class="math notranslate nohighlight">
+\[U(x_1,x_2) = x_1^\alpha x_2^\beta, \qquad \alpha,\beta \in (0,1)\]</div>
+<p>Бюджетно ограничение:</p>
+<div class="math notranslate nohighlight">
+\[p_1x_1+p_2x_2 = I, \qquad p_1,p_2,I &gt; 0\]</div>
+<p>Стандартната задача на потребителя е да се максимизира функцията на полезност при бюджетното ограничение.</p>
+<p>Решение:</p>
+<div class="math notranslate nohighlight">
+\[x^*_1 = \frac{\alpha}{\alpha+\beta}\frac{ I}{p_1}, \qquad x^*_2 = \frac{\beta}{\alpha+\beta}\frac{ I}{p_2}\]</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">scipy</span> <span class="k">as</span> <span class="nn">sp</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">dem_fun_1</span><span class="p">(</span><span class="n">p1</span><span class="p">,</span><span class="n">p2</span><span class="p">,</span><span class="n">I</span><span class="p">,</span><span class="n">alpha</span><span class="p">,</span><span class="n">beta</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">alpha</span><span class="o">*</span><span class="n">I</span><span class="o">/</span><span class="p">((</span><span class="n">alpha</span><span class="o">+</span><span class="n">beta</span><span class="p">)</span><span class="o">*</span><span class="n">p1</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">dem_fun_2</span><span class="p">(</span><span class="n">p1</span><span class="p">,</span><span class="n">p2</span><span class="p">,</span><span class="n">I</span><span class="p">,</span><span class="n">alpha</span><span class="p">,</span><span class="n">beta</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">beta</span><span class="o">*</span><span class="n">I</span><span class="o">/</span><span class="p">((</span><span class="n">alpha</span><span class="o">+</span><span class="n">beta</span><span class="p">)</span><span class="o">*</span><span class="n">p2</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">p1</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">p2</span> <span class="o">=</span> <span class="mf">1.5</span>
+<span class="n">alpha</span> <span class="o">=</span> <span class="mi">1</span><span class="o">/</span><span class="mi">3</span>
+<span class="n">beta</span> <span class="o">=</span> <span class="mi">1</span><span class="o">-</span><span class="n">alpha</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">pvec</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mf">0.5</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mf">0.1</span><span class="p">)</span>
+<span class="n">I</span><span class="o">=</span><span class="mi">50</span>
+
+<span class="n">x1</span> <span class="o">=</span> <span class="n">dem_fun_1</span><span class="p">(</span><span class="n">pvec</span><span class="p">,</span><span class="n">p2</span><span class="p">,</span><span class="n">I</span><span class="p">,</span><span class="n">alpha</span><span class="p">,</span><span class="n">beta</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x1</span><span class="p">,</span> <span class="n">pvec</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="nb">max</span><span class="p">(</span><span class="n">x1</span><span class="p">)</span><span class="o">*</span><span class="mf">1.05</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="nb">max</span><span class="p">(</span><span class="n">pvec</span><span class="p">)</span><span class="o">*</span><span class="mf">1.05</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;$p_1$&quot;</span><span class="p">,</span><span class="n">fontsize</span> <span class="o">=</span> <span class="mi">16</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;$x^*_1$&quot;</span><span class="p">,</span><span class="n">fontsize</span> <span class="o">=</span> <span class="mi">16</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+<span class="n">x2</span> <span class="o">=</span> <span class="n">dem_fun_2</span><span class="p">(</span><span class="n">p1</span><span class="p">,</span><span class="n">pvec</span><span class="p">,</span><span class="n">I</span><span class="p">,</span><span class="n">alpha</span><span class="p">,</span><span class="n">beta</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x2</span><span class="p">,</span> <span class="n">pvec</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="nb">max</span><span class="p">(</span><span class="n">x2</span><span class="p">)</span><span class="o">*</span><span class="mf">1.05</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="nb">max</span><span class="p">(</span><span class="n">pvec</span><span class="p">)</span><span class="o">*</span><span class="mf">1.05</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;$p_2$&quot;</span><span class="p">,</span><span class="n">fontsize</span> <span class="o">=</span> <span class="mi">16</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;$x^*_2$&quot;</span><span class="p">,</span><span class="n">fontsize</span> <span class="o">=</span> <span class="mi">16</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/230c3dcfb5528e211fda51514e9cf82418b9dc6819eadd0ec4dfd732247687e6.png" src="_images/230c3dcfb5528e211fda51514e9cf82418b9dc6819eadd0ec4dfd732247687e6.png" />
+<img alt="_images/6b3b6ac327bc83bd670fa4e8750b833cd716cd4dfec3779808f5d004f825bb18.png" src="_images/6b3b6ac327bc83bd670fa4e8750b833cd716cd4dfec3779808f5d004f825bb18.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">consumers</span> <span class="o">=</span> <span class="p">[{</span><span class="s2">&quot;nr&quot;</span><span class="p">:</span><span class="mi">500</span><span class="p">,</span> <span class="s2">&quot;I&quot;</span><span class="p">:</span><span class="mi">50</span><span class="p">},</span>
+             <span class="p">{</span><span class="s2">&quot;nr&quot;</span><span class="p">:</span><span class="mi">300</span><span class="p">,</span> <span class="s2">&quot;I&quot;</span><span class="p">:</span><span class="mi">100</span><span class="p">},</span>
+             <span class="p">{</span><span class="s2">&quot;nr&quot;</span><span class="p">:</span><span class="mi">20</span><span class="p">,</span> <span class="s2">&quot;I&quot;</span><span class="p">:</span><span class="mi">1000</span><span class="p">}]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">agg_dem_1</span><span class="p">(</span><span class="n">consumers</span><span class="p">,</span> <span class="n">p1</span><span class="p">,</span><span class="n">p2</span><span class="p">,</span><span class="n">alpha</span><span class="p">,</span><span class="n">beta</span><span class="p">):</span>
+    <span class="n">x1_agg</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">for</span> <span class="n">income_group</span> <span class="ow">in</span> <span class="n">consumers</span><span class="p">:</span>
+        <span class="n">x1_agg</span> <span class="o">+=</span> <span class="n">income_group</span><span class="p">[</span><span class="s2">&quot;nr&quot;</span><span class="p">]</span><span class="o">*</span><span class="n">dem_fun_1</span><span class="p">(</span><span class="n">p1</span><span class="p">,</span><span class="n">p2</span><span class="p">,</span><span class="n">income_group</span><span class="p">[</span><span class="s2">&quot;I&quot;</span><span class="p">],</span><span class="n">alpha</span><span class="p">,</span> <span class="n">beta</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">x1_agg</span>
+
+<span class="k">def</span> <span class="nf">agg_dem_2</span><span class="p">(</span><span class="n">consumers</span><span class="p">,</span> <span class="n">p1</span><span class="p">,</span><span class="n">p2</span><span class="p">,</span><span class="n">alpha</span><span class="p">,</span><span class="n">beta</span><span class="p">):</span>
+    <span class="n">x2_agg</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">for</span> <span class="n">income_group</span> <span class="ow">in</span> <span class="n">consumers</span><span class="p">:</span>
+        <span class="n">x2_agg</span> <span class="o">+=</span> <span class="n">income_group</span><span class="p">[</span><span class="s2">&quot;nr&quot;</span><span class="p">]</span><span class="o">*</span><span class="n">dem_fun_2</span><span class="p">(</span><span class="n">p1</span><span class="p">,</span><span class="n">p2</span><span class="p">,</span><span class="n">income_group</span><span class="p">[</span><span class="s2">&quot;I&quot;</span><span class="p">],</span><span class="n">alpha</span><span class="p">,</span> <span class="n">beta</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">x2_agg</span>
+
+
+<span class="k">def</span> <span class="nf">repr_consumer_population</span><span class="p">(</span><span class="n">consumers</span><span class="p">):</span>
+    <span class="n">Itot</span> <span class="o">=</span> <span class="n">nr_tot</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">for</span> <span class="n">income_group</span> <span class="ow">in</span> <span class="n">consumers</span><span class="p">:</span>
+        <span class="n">Itot</span> <span class="o">+=</span> <span class="n">income_group</span><span class="p">[</span><span class="s2">&quot;nr&quot;</span><span class="p">]</span><span class="o">*</span><span class="n">income_group</span><span class="p">[</span><span class="s2">&quot;I&quot;</span><span class="p">]</span>
+        <span class="n">nr_tot</span> <span class="o">+=</span> <span class="n">income_group</span><span class="p">[</span><span class="s2">&quot;nr&quot;</span><span class="p">]</span>
+    <span class="k">return</span> <span class="p">[{</span><span class="s2">&quot;nr&quot;</span><span class="p">:</span><span class="n">nr_tot</span><span class="p">,</span> <span class="s2">&quot;I&quot;</span><span class="p">:</span><span class="n">Itot</span><span class="o">/</span><span class="n">nr_tot</span><span class="p">}]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">x1_agg</span> <span class="o">=</span> <span class="n">agg_dem_1</span><span class="p">(</span><span class="n">consumers</span><span class="p">,</span><span class="n">pvec</span><span class="p">,</span><span class="n">p2</span><span class="p">,</span><span class="n">alpha</span><span class="p">,</span><span class="n">beta</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x1_agg</span><span class="p">,</span> <span class="n">pvec</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="nb">max</span><span class="p">(</span><span class="n">x1_agg</span><span class="p">)</span><span class="o">*</span><span class="mf">1.05</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="nb">max</span><span class="p">(</span><span class="n">pvec</span><span class="p">)</span><span class="o">*</span><span class="mf">1.05</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;$p_1$&quot;</span><span class="p">,</span><span class="n">fontsize</span> <span class="o">=</span> <span class="mi">16</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;$\mathcal</span><span class="si">{X}</span><span class="s2">^*_1$&quot;</span><span class="p">,</span><span class="n">fontsize</span> <span class="o">=</span> <span class="mi">16</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+<span class="n">x2_agg</span> <span class="o">=</span> <span class="n">agg_dem_2</span><span class="p">(</span><span class="n">consumers</span><span class="p">,</span><span class="n">p1</span><span class="p">,</span><span class="n">pvec</span><span class="p">,</span><span class="n">alpha</span><span class="p">,</span><span class="n">beta</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x2_agg</span><span class="p">,</span> <span class="n">pvec</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="nb">max</span><span class="p">(</span><span class="n">x2_agg</span><span class="p">)</span><span class="o">*</span><span class="mf">1.05</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="nb">max</span><span class="p">(</span><span class="n">pvec</span><span class="p">)</span><span class="o">*</span><span class="mf">1.05</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;$p_2$&quot;</span><span class="p">,</span><span class="n">fontsize</span> <span class="o">=</span> <span class="mi">16</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;$\mathcal</span><span class="si">{X}</span><span class="s2">^*_2$&quot;</span><span class="p">,</span><span class="n">fontsize</span> <span class="o">=</span> <span class="mi">16</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/912a9f9969a6bbd15866134d880ee06bfc3609f73f005072a88b78eda224e14b.png" src="_images/912a9f9969a6bbd15866134d880ee06bfc3609f73f005072a88b78eda224e14b.png" />
+<img alt="_images/2805e301ca8fd00a787806a85f674a5cc28d061753f0c03efb83c674de6c2614.png" src="_images/2805e301ca8fd00a787806a85f674a5cc28d061753f0c03efb83c674de6c2614.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">x1_agg</span> <span class="o">=</span> <span class="n">agg_dem_1</span><span class="p">(</span><span class="n">consumers</span><span class="p">,</span><span class="n">pvec</span><span class="p">,</span><span class="n">p2</span><span class="p">,</span><span class="n">alpha</span><span class="p">,</span><span class="n">beta</span><span class="p">)</span>
+<span class="n">x1_agg_repr</span> <span class="o">=</span> <span class="n">agg_dem_1</span><span class="p">(</span><span class="n">repr_consumer_population</span><span class="p">(</span><span class="n">consumers</span><span class="p">),</span><span class="n">pvec</span><span class="p">,</span><span class="n">p2</span><span class="p">,</span><span class="n">alpha</span><span class="p">,</span><span class="n">beta</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x1_agg</span><span class="p">,</span> <span class="n">pvec</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x1_agg_repr</span><span class="p">,</span> <span class="n">pvec</span><span class="p">,</span> <span class="s2">&quot;r--&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="nb">max</span><span class="p">(</span><span class="n">x1_agg</span><span class="p">)</span><span class="o">*</span><span class="mf">1.05</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="nb">max</span><span class="p">(</span><span class="n">pvec</span><span class="p">)</span><span class="o">*</span><span class="mf">1.05</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;$p_1$&quot;</span><span class="p">,</span><span class="n">fontsize</span> <span class="o">=</span> <span class="mi">16</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;$\mathcal</span><span class="si">{X}</span><span class="s2">^*_1$&quot;</span><span class="p">,</span><span class="n">fontsize</span> <span class="o">=</span> <span class="mi">16</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+<span class="n">x2_agg</span> <span class="o">=</span> <span class="n">agg_dem_2</span><span class="p">(</span><span class="n">consumers</span><span class="p">,</span><span class="n">p1</span><span class="p">,</span><span class="n">pvec</span><span class="p">,</span><span class="n">alpha</span><span class="p">,</span><span class="n">beta</span><span class="p">)</span>
+<span class="n">x2_agg_repr</span> <span class="o">=</span> <span class="n">agg_dem_2</span><span class="p">(</span><span class="n">repr_consumer_population</span><span class="p">(</span><span class="n">consumers</span><span class="p">),</span><span class="n">p1</span><span class="p">,</span><span class="n">pvec</span><span class="p">,</span><span class="n">alpha</span><span class="p">,</span><span class="n">beta</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x2_agg</span><span class="p">,</span> <span class="n">pvec</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x2_agg_repr</span><span class="p">,</span> <span class="n">pvec</span><span class="p">,</span> <span class="s2">&quot;r--&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="nb">max</span><span class="p">(</span><span class="n">x2_agg</span><span class="p">)</span><span class="o">*</span><span class="mf">1.05</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="nb">max</span><span class="p">(</span><span class="n">pvec</span><span class="p">)</span><span class="o">*</span><span class="mf">1.05</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;$p_2$&quot;</span><span class="p">,</span><span class="n">fontsize</span> <span class="o">=</span> <span class="mi">16</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;$\mathcal</span><span class="si">{X}</span><span class="s2">^*_2$&quot;</span><span class="p">,</span><span class="n">fontsize</span> <span class="o">=</span> <span class="mi">16</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/3920002247b7c9373c808feb1a71e5411a0cd030019850c4e549cf9e7dacea8a.png" src="_images/3920002247b7c9373c808feb1a71e5411a0cd030019850c4e549cf9e7dacea8a.png" />
+<img alt="_images/b665c94fc3b7d10d162221021cd75837a68cf9864b1c2c73309448411cc3fe12.png" src="_images/b665c94fc3b7d10d162221021cd75837a68cf9864b1c2c73309448411cc3fe12.png" />
+</div>
+</div>
+<p>Визуално кривите на съвкупно търсене на съответните стоки съвпадат. Така ли е наистина?</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">pvec</span><span class="p">,</span> <span class="n">x1_agg</span><span class="o">-</span><span class="n">x1_agg_repr</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;$p_1$&quot;</span><span class="p">,</span><span class="n">fontsize</span> <span class="o">=</span> <span class="mi">16</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;$\mathcal</span><span class="si">{X}</span><span class="s2">^*_1 - \mathcal</span><span class="si">{X}</span><span class="s2">^{*a}_1$&quot;</span><span class="p">,</span><span class="n">fontsize</span> <span class="o">=</span> <span class="mi">16</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">pvec</span><span class="p">,</span> <span class="n">x2_agg</span><span class="o">-</span><span class="n">x2_agg_repr</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;$p_2$&quot;</span><span class="p">,</span><span class="n">fontsize</span> <span class="o">=</span> <span class="mi">16</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;$\mathcal</span><span class="si">{X}</span><span class="s2">^*_2 - \mathcal</span><span class="si">{X}</span><span class="s2">^{*a}_2$&quot;</span><span class="p">,</span><span class="n">fontsize</span> <span class="o">=</span> <span class="mi">16</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/26fd6bd89f19fb6364965f0755103f8b3cac0690e230ecda30b1b9ef723eb811.png" src="_images/26fd6bd89f19fb6364965f0755103f8b3cac0690e230ecda30b1b9ef723eb811.png" />
+<img alt="_images/e5de6cdf283cd5db419dd1e203daad72955b77e9700e5d2c68f508d6b9bcd6a5.png" src="_images/e5de6cdf283cd5db419dd1e203daad72955b77e9700e5d2c68f508d6b9bcd6a5.png" />
+</div>
+</div>
+</section>
+<section id="stone-geary">
+<h2>Оптимален избор и потребителско търсене: предпочитания на Stone-Geary<a class="headerlink" href="#stone-geary" title="Permalink to this heading">#</a></h2>
+<p>Функция на полезност:</p>
+<div class="math notranslate nohighlight">
+\[U(x_1,x_2) = (x_1-\bar{x}_1)^\alpha (x_2-\bar{x}_2)^\beta \]</div>
+<div class="math notranslate nohighlight">
+\[\alpha,\beta \in (0,1), \quad \bar{x}_1, \bar{x}_2 &gt; 0\]</div>
+<p>Бюджетно ограничение:</p>
+<div class="math notranslate nohighlight">
+\[p_1x_1+p_2x_2 = I, \qquad p_1,p_2,I &gt; 0\]</div>
+<p>Отново стандартна задача за максимизиране на полезност.</p>
+<p>Бележки:</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(\bar{x}_1\)</span> и <span class="math notranslate nohighlight">\(\bar{x}_2\)</span> се интерпретират като минимално необходимо потребление</p></li>
+<li><p>За да имат смисъл решенията, дадени по-долу, трябва да е изпълнено <span class="math notranslate nohighlight">\(I-p_1\bar{x}_1 -p_2\bar{x}_2 \geq 0\)</span></p></li>
+</ul>
+<p>Решение:</p>
+<div class="math notranslate nohighlight">
+\[x^*_1 = \bar{x}_1 + \frac{\alpha}{\alpha+\beta} \frac{I-p_1\bar{x}_1 -p_2\bar{x}_2}{p_1}, \qquad x^*_2 = \bar{x}_2 + \frac{\beta}{\alpha+\beta} \frac{I-p_1\bar{x}_1 -p_2\bar{x}_2}{p_2} \]</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">dem_fun_1_SG</span><span class="p">(</span><span class="n">p1</span><span class="p">,</span><span class="n">p2</span><span class="p">,</span><span class="n">I</span><span class="p">,</span><span class="n">alpha</span><span class="p">,</span><span class="n">beta</span><span class="p">,</span><span class="n">x1bar</span><span class="p">,</span><span class="n">x2bar</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">x1bar</span> <span class="o">+</span> <span class="p">(</span><span class="n">alpha</span><span class="o">/</span><span class="p">(</span><span class="n">alpha</span><span class="o">+</span><span class="n">beta</span><span class="p">))</span> <span class="o">*</span> <span class="p">((</span><span class="n">I</span><span class="o">-</span><span class="n">p1</span><span class="o">*</span><span class="n">x1bar</span><span class="o">-</span><span class="n">p2</span><span class="o">*</span><span class="n">x2bar</span><span class="p">)</span><span class="o">/</span><span class="n">p1</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">dem_fun_2_SG</span><span class="p">(</span><span class="n">p1</span><span class="p">,</span><span class="n">p2</span><span class="p">,</span><span class="n">I</span><span class="p">,</span><span class="n">alpha</span><span class="p">,</span><span class="n">beta</span><span class="p">,</span><span class="n">x1bar</span><span class="p">,</span><span class="n">x2bar</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">x2bar</span> <span class="o">+</span> <span class="p">(</span><span class="n">beta</span><span class="o">/</span><span class="p">(</span><span class="n">alpha</span><span class="o">+</span><span class="n">beta</span><span class="p">))</span> <span class="o">*</span> <span class="p">((</span><span class="n">I</span><span class="o">-</span><span class="n">p1</span><span class="o">*</span><span class="n">x1bar</span><span class="o">-</span><span class="n">p2</span><span class="o">*</span><span class="n">x2bar</span><span class="p">)</span><span class="o">/</span><span class="n">p2</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">p1</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">p2</span> <span class="o">=</span> <span class="mf">1.5</span>
+<span class="n">alpha</span> <span class="o">=</span> <span class="mi">1</span><span class="o">/</span><span class="mi">3</span>
+<span class="n">beta</span> <span class="o">=</span> <span class="mi">1</span><span class="o">-</span><span class="n">alpha</span>
+<span class="n">x1bar</span> <span class="o">=</span> <span class="mi">20</span>
+<span class="n">x2bar</span> <span class="o">=</span> <span class="mi">10</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">pvec</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mf">0.5</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mf">0.1</span><span class="p">)</span>
+<span class="n">I</span><span class="o">=</span><span class="mi">50</span>
+
+<span class="n">x1</span> <span class="o">=</span> <span class="n">dem_fun_1_SG</span><span class="p">(</span><span class="n">pvec</span><span class="p">,</span><span class="n">p2</span><span class="p">,</span><span class="n">I</span><span class="p">,</span><span class="n">alpha</span><span class="p">,</span><span class="n">beta</span><span class="p">,</span><span class="n">x1bar</span><span class="p">,</span><span class="n">x2bar</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x1</span><span class="p">,</span> <span class="n">pvec</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="nb">max</span><span class="p">(</span><span class="n">x1</span><span class="p">)</span><span class="o">*</span><span class="mf">1.05</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="nb">max</span><span class="p">(</span><span class="n">pvec</span><span class="p">)</span><span class="o">*</span><span class="mf">1.05</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;$p_1$&quot;</span><span class="p">,</span><span class="n">fontsize</span> <span class="o">=</span> <span class="mi">16</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;$x^*_1$&quot;</span><span class="p">,</span><span class="n">fontsize</span> <span class="o">=</span> <span class="mi">16</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+<span class="n">x2</span> <span class="o">=</span> <span class="n">dem_fun_2_SG</span><span class="p">(</span><span class="n">p1</span><span class="p">,</span><span class="n">pvec</span><span class="p">,</span><span class="n">I</span><span class="p">,</span><span class="n">alpha</span><span class="p">,</span><span class="n">beta</span><span class="p">,</span><span class="n">x1bar</span><span class="p">,</span><span class="n">x2bar</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x2</span><span class="p">,</span> <span class="n">pvec</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="nb">max</span><span class="p">(</span><span class="n">x2</span><span class="p">)</span><span class="o">*</span><span class="mf">1.05</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="nb">max</span><span class="p">(</span><span class="n">pvec</span><span class="p">)</span><span class="o">*</span><span class="mf">1.05</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;$p_2$&quot;</span><span class="p">,</span><span class="n">fontsize</span> <span class="o">=</span> <span class="mi">16</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;$x^*_2$&quot;</span><span class="p">,</span><span class="n">fontsize</span> <span class="o">=</span> <span class="mi">16</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/f3389e1143313234a80da1cf8154c9871378cf555d124e01c2a88d9e8c23091f.png" src="_images/f3389e1143313234a80da1cf8154c9871378cf555d124e01c2a88d9e8c23091f.png" />
+<img alt="_images/82bbfa80b2b76cf0a1de5351c189be3ab48b034a16eedacc9f789f2b78897694.png" src="_images/82bbfa80b2b76cf0a1de5351c189be3ab48b034a16eedacc9f789f2b78897694.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">consumers</span> <span class="o">=</span> <span class="p">[{</span><span class="s2">&quot;nr&quot;</span><span class="p">:</span><span class="mi">500</span><span class="p">,</span> <span class="s2">&quot;I&quot;</span><span class="p">:</span><span class="mi">50</span><span class="p">},</span>
+             <span class="p">{</span><span class="s2">&quot;nr&quot;</span><span class="p">:</span><span class="mi">300</span><span class="p">,</span> <span class="s2">&quot;I&quot;</span><span class="p">:</span><span class="mi">100</span><span class="p">},</span>
+             <span class="p">{</span><span class="s2">&quot;nr&quot;</span><span class="p">:</span><span class="mi">20</span><span class="p">,</span> <span class="s2">&quot;I&quot;</span><span class="p">:</span><span class="mi">1000</span><span class="p">}]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">agg_dem_1_SG</span><span class="p">(</span><span class="n">consumers</span><span class="p">,</span> <span class="n">p1</span><span class="p">,</span><span class="n">p2</span><span class="p">,</span><span class="n">alpha</span><span class="p">,</span><span class="n">beta</span><span class="p">,</span><span class="n">x1bar</span><span class="p">,</span><span class="n">x2bar</span><span class="p">):</span>
+    <span class="n">x1_agg</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">for</span> <span class="n">income_group</span> <span class="ow">in</span> <span class="n">consumers</span><span class="p">:</span>
+        <span class="n">x1_agg</span> <span class="o">+=</span> <span class="n">income_group</span><span class="p">[</span><span class="s2">&quot;nr&quot;</span><span class="p">]</span><span class="o">*</span><span class="n">dem_fun_1_SG</span><span class="p">(</span><span class="n">p1</span><span class="p">,</span><span class="n">p2</span><span class="p">,</span><span class="n">income_group</span><span class="p">[</span><span class="s2">&quot;I&quot;</span><span class="p">],</span><span class="n">alpha</span><span class="p">,</span> <span class="n">beta</span><span class="p">,</span><span class="n">x1bar</span><span class="p">,</span><span class="n">x2bar</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">x1_agg</span>
+
+<span class="k">def</span> <span class="nf">agg_dem_2_SG</span><span class="p">(</span><span class="n">consumers</span><span class="p">,</span> <span class="n">p1</span><span class="p">,</span><span class="n">p2</span><span class="p">,</span><span class="n">alpha</span><span class="p">,</span><span class="n">beta</span><span class="p">,</span><span class="n">x1bar</span><span class="p">,</span><span class="n">x2bar</span><span class="p">):</span>
+    <span class="n">x2_agg</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">for</span> <span class="n">income_group</span> <span class="ow">in</span> <span class="n">consumers</span><span class="p">:</span>
+        <span class="n">x2_agg</span> <span class="o">+=</span> <span class="n">income_group</span><span class="p">[</span><span class="s2">&quot;nr&quot;</span><span class="p">]</span><span class="o">*</span><span class="n">dem_fun_2_SG</span><span class="p">(</span><span class="n">p1</span><span class="p">,</span><span class="n">p2</span><span class="p">,</span><span class="n">income_group</span><span class="p">[</span><span class="s2">&quot;I&quot;</span><span class="p">],</span><span class="n">alpha</span><span class="p">,</span> <span class="n">beta</span><span class="p">,</span><span class="n">x1bar</span><span class="p">,</span><span class="n">x2bar</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">x2_agg</span>
+
+
+<span class="k">def</span> <span class="nf">repr_consumer_population</span><span class="p">(</span><span class="n">consumers</span><span class="p">):</span>
+    <span class="n">Itot</span> <span class="o">=</span> <span class="n">nr_tot</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">for</span> <span class="n">income_group</span> <span class="ow">in</span> <span class="n">consumers</span><span class="p">:</span>
+        <span class="n">Itot</span> <span class="o">+=</span> <span class="n">income_group</span><span class="p">[</span><span class="s2">&quot;nr&quot;</span><span class="p">]</span><span class="o">*</span><span class="n">income_group</span><span class="p">[</span><span class="s2">&quot;I&quot;</span><span class="p">]</span>
+        <span class="n">nr_tot</span> <span class="o">+=</span> <span class="n">income_group</span><span class="p">[</span><span class="s2">&quot;nr&quot;</span><span class="p">]</span>
+    <span class="k">return</span> <span class="p">[{</span><span class="s2">&quot;nr&quot;</span><span class="p">:</span><span class="n">nr_tot</span><span class="p">,</span> <span class="s2">&quot;I&quot;</span><span class="p">:</span><span class="n">Itot</span><span class="o">/</span><span class="n">nr_tot</span><span class="p">}]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">x1_agg_SG</span> <span class="o">=</span> <span class="n">agg_dem_1_SG</span><span class="p">(</span><span class="n">consumers</span><span class="p">,</span><span class="n">pvec</span><span class="p">,</span><span class="n">p2</span><span class="p">,</span><span class="n">alpha</span><span class="p">,</span><span class="n">beta</span><span class="p">,</span><span class="n">x1bar</span><span class="p">,</span><span class="n">x2bar</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x1_agg_SG</span><span class="p">,</span> <span class="n">pvec</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="nb">max</span><span class="p">(</span><span class="n">x1_agg_SG</span><span class="p">)</span><span class="o">*</span><span class="mf">1.05</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="nb">max</span><span class="p">(</span><span class="n">pvec</span><span class="p">)</span><span class="o">*</span><span class="mf">1.05</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;$p_1$&quot;</span><span class="p">,</span><span class="n">fontsize</span> <span class="o">=</span> <span class="mi">16</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;$\mathcal</span><span class="si">{X}</span><span class="s2">^*_1$&quot;</span><span class="p">,</span><span class="n">fontsize</span> <span class="o">=</span> <span class="mi">16</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+<span class="n">x2_agg_SG</span> <span class="o">=</span> <span class="n">agg_dem_2_SG</span><span class="p">(</span><span class="n">consumers</span><span class="p">,</span><span class="n">p1</span><span class="p">,</span><span class="n">pvec</span><span class="p">,</span><span class="n">alpha</span><span class="p">,</span><span class="n">beta</span><span class="p">,</span><span class="n">x1bar</span><span class="p">,</span><span class="n">x2bar</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x2_agg_SG</span><span class="p">,</span> <span class="n">pvec</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="nb">max</span><span class="p">(</span><span class="n">x2_agg_SG</span><span class="p">)</span><span class="o">*</span><span class="mf">1.05</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="nb">max</span><span class="p">(</span><span class="n">pvec</span><span class="p">)</span><span class="o">*</span><span class="mf">1.05</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;$p_2$&quot;</span><span class="p">,</span><span class="n">fontsize</span> <span class="o">=</span> <span class="mi">16</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;$\mathcal</span><span class="si">{X}</span><span class="s2">^*_2$&quot;</span><span class="p">,</span><span class="n">fontsize</span> <span class="o">=</span> <span class="mi">16</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/0e24b06894b52e9761c7f65d9d842c6d91f1d8a13ccfd47685f6c247e0a65e4a.png" src="_images/0e24b06894b52e9761c7f65d9d842c6d91f1d8a13ccfd47685f6c247e0a65e4a.png" />
+<img alt="_images/1fcfdbba9b1e4ec25fa2b838197b9826e61ff614fc5ffe997d2c0cb3ca1a1a92.png" src="_images/1fcfdbba9b1e4ec25fa2b838197b9826e61ff614fc5ffe997d2c0cb3ca1a1a92.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">x1_agg_SG</span> <span class="o">=</span> <span class="n">agg_dem_1_SG</span><span class="p">(</span><span class="n">consumers</span><span class="p">,</span><span class="n">pvec</span><span class="p">,</span><span class="n">p2</span><span class="p">,</span><span class="n">alpha</span><span class="p">,</span><span class="n">beta</span><span class="p">,</span><span class="n">x1bar</span><span class="p">,</span><span class="n">x2bar</span><span class="p">)</span>
+<span class="n">x1_agg_SG_repr</span> <span class="o">=</span> <span class="n">agg_dem_1_SG</span><span class="p">(</span><span class="n">repr_consumer_population</span><span class="p">(</span><span class="n">consumers</span><span class="p">),</span><span class="n">pvec</span><span class="p">,</span><span class="n">p2</span><span class="p">,</span><span class="n">alpha</span><span class="p">,</span><span class="n">beta</span><span class="p">,</span><span class="n">x1bar</span><span class="p">,</span><span class="n">x2bar</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x1_agg_SG</span><span class="p">,</span> <span class="n">pvec</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x1_agg_SG_repr</span><span class="p">,</span> <span class="n">pvec</span><span class="p">,</span> <span class="s2">&quot;r--&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="nb">max</span><span class="p">(</span><span class="n">x1_agg_SG</span><span class="p">)</span><span class="o">*</span><span class="mf">1.05</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="nb">max</span><span class="p">(</span><span class="n">pvec</span><span class="p">)</span><span class="o">*</span><span class="mf">1.05</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;$p_1$&quot;</span><span class="p">,</span><span class="n">fontsize</span> <span class="o">=</span> <span class="mi">16</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;$\mathcal</span><span class="si">{X}</span><span class="s2">^*_1$&quot;</span><span class="p">,</span><span class="n">fontsize</span> <span class="o">=</span> <span class="mi">16</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+
+<span class="n">x2_agg_SG</span> <span class="o">=</span> <span class="n">agg_dem_2_SG</span><span class="p">(</span><span class="n">consumers</span><span class="p">,</span><span class="n">p1</span><span class="p">,</span><span class="n">pvec</span><span class="p">,</span><span class="n">alpha</span><span class="p">,</span><span class="n">beta</span><span class="p">,</span><span class="n">x1bar</span><span class="p">,</span><span class="n">x2bar</span><span class="p">)</span>
+<span class="n">x2_agg_SG_repr</span> <span class="o">=</span> <span class="n">agg_dem_2_SG</span><span class="p">(</span><span class="n">repr_consumer_population</span><span class="p">(</span><span class="n">consumers</span><span class="p">),</span><span class="n">p1</span><span class="p">,</span><span class="n">pvec</span><span class="p">,</span><span class="n">alpha</span><span class="p">,</span><span class="n">beta</span><span class="p">,</span><span class="n">x1bar</span><span class="p">,</span><span class="n">x2bar</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x2_agg_SG</span><span class="p">,</span> <span class="n">pvec</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x2_agg_SG_repr</span><span class="p">,</span> <span class="n">pvec</span><span class="p">,</span> <span class="s2">&quot;r--&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="nb">max</span><span class="p">(</span><span class="n">x2_agg_SG</span><span class="p">)</span><span class="o">*</span><span class="mf">1.05</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="nb">max</span><span class="p">(</span><span class="n">pvec</span><span class="p">)</span><span class="o">*</span><span class="mf">1.05</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;$p_2$&quot;</span><span class="p">,</span><span class="n">fontsize</span> <span class="o">=</span> <span class="mi">16</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;$\mathcal</span><span class="si">{X}</span><span class="s2">^*_2$&quot;</span><span class="p">,</span><span class="n">fontsize</span> <span class="o">=</span> <span class="mi">16</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/4c7a13f559c24c6cdec89dd10211308fa69c631bb82101cdc535d1cc0f3b2372.png" src="_images/4c7a13f559c24c6cdec89dd10211308fa69c631bb82101cdc535d1cc0f3b2372.png" />
+<img alt="_images/e2380ae3d1f8fbb03a4af5688efe2924d22bcf3df9071b9d343606ede36d717e.png" src="_images/e2380ae3d1f8fbb03a4af5688efe2924d22bcf3df9071b9d343606ede36d717e.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">pvec</span><span class="p">,</span> <span class="n">x1_agg_SG</span><span class="o">-</span><span class="n">x1_agg_SG_repr</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;$p_1$&quot;</span><span class="p">,</span><span class="n">fontsize</span> <span class="o">=</span> <span class="mi">16</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;$\mathcal</span><span class="si">{X}</span><span class="s2">^*_1 - \mathcal</span><span class="si">{X}</span><span class="s2">^{*a}_1$&quot;</span><span class="p">,</span><span class="n">fontsize</span> <span class="o">=</span> <span class="mi">16</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">pvec</span><span class="p">,</span> <span class="n">x2_agg_SG</span><span class="o">-</span><span class="n">x2_agg_SG_repr</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;$p_2$&quot;</span><span class="p">,</span><span class="n">fontsize</span> <span class="o">=</span> <span class="mi">16</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;$\mathcal</span><span class="si">{X}</span><span class="s2">^*_2 - \mathcal</span><span class="si">{X}</span><span class="s2">^{*a}_2$&quot;</span><span class="p">,</span><span class="n">fontsize</span> <span class="o">=</span> <span class="mi">16</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/d1c6dce3eb2ba2e27212d450bd0977842435b278113970b8417fe6b5daa7588e.png" src="_images/d1c6dce3eb2ba2e27212d450bd0977842435b278113970b8417fe6b5daa7588e.png" />
+<img alt="_images/a425713db10fc0f038d922651c86f9078f50cee3cd523f72e3c01de27213297b.png" src="_images/a425713db10fc0f038d922651c86f9078f50cee3cd523f72e3c01de27213297b.png" />
+</div>
+</div>
+</section>
+<section id="id2">
+<h2>Оптимален избор и потребителско търсене: транслог предпочитания<a class="headerlink" href="#id2" title="Permalink to this heading">#</a></h2>
+<p>Функция на полезност:</p>
+<div class="math notranslate nohighlight">
+\[U(x_1, x_2) = \exp\left( a_0 + a_1 \ln x_1 + a_2 \ln x_2 + \frac{b_{11}}{2} (\ln x_1)^2 + \frac{b_{22}}{2} (\ln x_2)^2 + b_{12} \ln x_1 \ln x_2 \right)
+\]</div>
+<div class="math notranslate nohighlight">
+\[a_1,a_2&gt;0,\quad b_{11},b_{22}&lt;0\]</div>
+<p>Бюджетно ограничение:</p>
+<div class="math notranslate nohighlight">
+\[p_1x_1+p_2x_2 = I, \qquad p_1,p_2,I &gt; 0\]</div>
+<p>Стандартна задача за максимизиране на полезност.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">from</span> <span class="nn">scipy.optimize</span> <span class="kn">import</span> <span class="n">minimize</span>
+
+<span class="k">def</span> <span class="nf">translog_utility</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">a0</span><span class="p">,</span> <span class="n">a1</span><span class="p">,</span> <span class="n">a2</span><span class="p">,</span> <span class="n">b11</span><span class="p">,</span> <span class="n">b22</span><span class="p">,</span> <span class="n">b12</span><span class="p">):</span>
+    <span class="n">x1</span><span class="p">,</span> <span class="n">x2</span> <span class="o">=</span> <span class="n">x</span>
+    <span class="n">logx1</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">x1</span><span class="p">)</span>
+    <span class="n">logx2</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">x2</span><span class="p">)</span>
+    <span class="n">util</span> <span class="o">=</span> <span class="n">a0</span> <span class="o">+</span> <span class="n">a1</span> <span class="o">*</span> <span class="n">logx1</span> <span class="o">+</span> <span class="n">a2</span> <span class="o">*</span> <span class="n">logx2</span> <span class="o">+</span> <span class="mf">0.5</span> <span class="o">*</span> <span class="n">b11</span> <span class="o">*</span> <span class="n">logx1</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="mf">0.5</span> <span class="o">*</span> <span class="n">b22</span> <span class="o">*</span> <span class="n">logx2</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="n">b12</span> <span class="o">*</span> <span class="n">logx1</span> <span class="o">*</span> <span class="n">logx2</span>
+    <span class="k">return</span> <span class="n">util</span>
+
+<span class="k">def</span> <span class="nf">objective</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">a0</span><span class="p">,</span> <span class="n">a1</span><span class="p">,</span> <span class="n">a2</span><span class="p">,</span> <span class="n">b11</span><span class="p">,</span> <span class="n">b22</span><span class="p">,</span> <span class="n">b12</span><span class="p">):</span>
+    <span class="k">return</span> <span class="o">-</span><span class="n">translog_utility</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">a0</span><span class="p">,</span> <span class="n">a1</span><span class="p">,</span> <span class="n">a2</span><span class="p">,</span> <span class="n">b11</span><span class="p">,</span> <span class="n">b22</span><span class="p">,</span> <span class="n">b12</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">optimize_translog</span><span class="p">(</span><span class="n">p1</span><span class="p">,</span> <span class="n">p2</span><span class="p">,</span> <span class="n">I</span><span class="p">,</span> <span class="n">a0</span><span class="p">,</span> <span class="n">a1</span><span class="p">,</span> <span class="n">a2</span><span class="p">,</span> <span class="n">b11</span><span class="p">,</span> <span class="n">b22</span><span class="p">,</span> <span class="n">b12</span><span class="p">):</span>
+    <span class="n">x0</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="n">I</span> <span class="o">/</span> <span class="p">(</span><span class="mi">2</span> <span class="o">*</span> <span class="n">p1</span><span class="p">),</span> <span class="n">I</span> <span class="o">/</span> <span class="p">(</span><span class="mi">2</span> <span class="o">*</span> <span class="n">p2</span><span class="p">)])</span>
+    <span class="n">cons</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;type&#39;</span><span class="p">:</span> <span class="s1">&#39;eq&#39;</span><span class="p">,</span> <span class="s1">&#39;fun&#39;</span><span class="p">:</span> <span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">p1</span> <span class="o">*</span> <span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="n">p2</span> <span class="o">*</span> <span class="n">x</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">-</span> <span class="n">I</span><span class="p">}</span>
+    <span class="n">bounds</span> <span class="o">=</span> <span class="p">((</span><span class="mf">1e-8</span><span class="p">,</span> <span class="kc">None</span><span class="p">),</span> <span class="p">(</span><span class="mf">1e-8</span><span class="p">,</span> <span class="kc">None</span><span class="p">))</span>
+    
+    <span class="n">result</span> <span class="o">=</span> <span class="n">minimize</span><span class="p">(</span>
+        <span class="n">objective</span><span class="p">,</span>
+        <span class="n">x0</span><span class="p">,</span>
+        <span class="n">args</span><span class="o">=</span><span class="p">(</span><span class="n">a0</span><span class="p">,</span> <span class="n">a1</span><span class="p">,</span> <span class="n">a2</span><span class="p">,</span> <span class="n">b11</span><span class="p">,</span> <span class="n">b22</span><span class="p">,</span> <span class="n">b12</span><span class="p">),</span>
+        <span class="n">method</span><span class="o">=</span><span class="s1">&#39;SLSQP&#39;</span><span class="p">,</span>
+        <span class="n">constraints</span><span class="o">=</span><span class="n">cons</span><span class="p">,</span>
+        <span class="n">bounds</span><span class="o">=</span><span class="n">bounds</span>
+    <span class="p">)</span>
+    
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">result</span><span class="o">.</span><span class="n">success</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;Optimization failed: &quot;</span> <span class="o">+</span> <span class="n">result</span><span class="o">.</span><span class="n">message</span><span class="p">)</span>
+    
+    <span class="k">return</span> <span class="n">result</span><span class="o">.</span><span class="n">x</span>
+
+<span class="k">def</span> <span class="nf">dem_fun_1_tlog</span><span class="p">(</span><span class="n">p1</span><span class="p">,</span> <span class="n">p2</span><span class="p">,</span> <span class="n">I</span><span class="p">,</span> <span class="n">a0</span><span class="p">,</span> <span class="n">a1</span><span class="p">,</span> <span class="n">a2</span><span class="p">,</span> <span class="n">b11</span><span class="p">,</span> <span class="n">b22</span><span class="p">,</span> <span class="n">b12</span><span class="p">):</span>
+    <span class="n">x</span> <span class="o">=</span> <span class="n">optimize_translog</span><span class="p">(</span><span class="n">p1</span><span class="p">,</span> <span class="n">p2</span><span class="p">,</span> <span class="n">I</span><span class="p">,</span> <span class="n">a0</span><span class="p">,</span> <span class="n">a1</span><span class="p">,</span> <span class="n">a2</span><span class="p">,</span> <span class="n">b11</span><span class="p">,</span> <span class="n">b22</span><span class="p">,</span> <span class="n">b12</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+
+<span class="k">def</span> <span class="nf">dem_fun_2_tlog</span><span class="p">(</span><span class="n">p1</span><span class="p">,</span> <span class="n">p2</span><span class="p">,</span> <span class="n">I</span><span class="p">,</span> <span class="n">a0</span><span class="p">,</span> <span class="n">a1</span><span class="p">,</span> <span class="n">a2</span><span class="p">,</span> <span class="n">b11</span><span class="p">,</span> <span class="n">b22</span><span class="p">,</span> <span class="n">b12</span><span class="p">):</span>
+    <span class="n">x</span> <span class="o">=</span> <span class="n">optimize_translog</span><span class="p">(</span><span class="n">p1</span><span class="p">,</span> <span class="n">p2</span><span class="p">,</span> <span class="n">I</span><span class="p">,</span> <span class="n">a0</span><span class="p">,</span> <span class="n">a1</span><span class="p">,</span> <span class="n">a2</span><span class="p">,</span> <span class="n">b11</span><span class="p">,</span> <span class="n">b22</span><span class="p">,</span> <span class="n">b12</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">x</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">p1</span> <span class="o">=</span> <span class="mf">1.0</span>
+<span class="n">p2</span> <span class="o">=</span> <span class="mf">2.0</span>
+<span class="n">I</span> <span class="o">=</span> <span class="mf">100.0</span>
+<span class="n">a0</span> <span class="o">=</span> <span class="mf">0.0</span>
+<span class="n">a1</span> <span class="o">=</span> <span class="mf">1.0</span>
+<span class="n">a2</span> <span class="o">=</span> <span class="mf">1.0</span>
+<span class="n">b11</span> <span class="o">=</span> <span class="o">-</span><span class="mf">0.2</span>
+<span class="n">b22</span> <span class="o">=</span> <span class="o">-</span><span class="mf">0.3</span>
+<span class="n">b12</span> <span class="o">=</span> <span class="mi">2</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">consumers</span> <span class="o">=</span> <span class="p">[{</span><span class="s2">&quot;nr&quot;</span><span class="p">:</span><span class="mi">500</span><span class="p">,</span> <span class="s2">&quot;I&quot;</span><span class="p">:</span><span class="mi">50</span><span class="p">},</span>
+             <span class="p">{</span><span class="s2">&quot;nr&quot;</span><span class="p">:</span><span class="mi">300</span><span class="p">,</span> <span class="s2">&quot;I&quot;</span><span class="p">:</span><span class="mi">100</span><span class="p">},</span>
+             <span class="p">{</span><span class="s2">&quot;nr&quot;</span><span class="p">:</span><span class="mi">20</span><span class="p">,</span> <span class="s2">&quot;I&quot;</span><span class="p">:</span><span class="mi">1000</span><span class="p">}]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">vec_dem_fun_1_tlog</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">vectorize</span><span class="p">(</span><span class="n">dem_fun_1_tlog</span><span class="p">)</span>
+<span class="n">vec_dem_fun_2_tlog</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">vectorize</span><span class="p">(</span><span class="n">dem_fun_2_tlog</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">pvec</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mf">0.1</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mf">0.1</span><span class="p">)</span>
+
+<span class="n">x1</span> <span class="o">=</span> <span class="n">vec_dem_fun_1_tlog</span><span class="p">(</span><span class="n">pvec</span><span class="p">,</span> <span class="n">p2</span><span class="p">,</span> <span class="n">I</span><span class="p">,</span> <span class="n">a0</span><span class="p">,</span> <span class="n">a1</span><span class="p">,</span> <span class="n">a2</span><span class="p">,</span> <span class="n">b11</span><span class="p">,</span> <span class="n">b22</span><span class="p">,</span> <span class="n">b12</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x1</span><span class="p">,</span> <span class="n">pvec</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="nb">max</span><span class="p">(</span><span class="n">x1</span><span class="p">)</span><span class="o">*</span><span class="mf">1.05</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="nb">max</span><span class="p">(</span><span class="n">pvec</span><span class="p">)</span><span class="o">*</span><span class="mf">1.05</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;$p_1$&quot;</span><span class="p">,</span><span class="n">fontsize</span> <span class="o">=</span> <span class="mi">16</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;$x^*_1$&quot;</span><span class="p">,</span><span class="n">fontsize</span> <span class="o">=</span> <span class="mi">16</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+<span class="n">x2</span> <span class="o">=</span> <span class="n">vec_dem_fun_2_tlog</span><span class="p">(</span><span class="n">p1</span><span class="p">,</span> <span class="n">pvec</span><span class="p">,</span> <span class="n">I</span><span class="p">,</span> <span class="n">a0</span><span class="p">,</span> <span class="n">a1</span><span class="p">,</span> <span class="n">a2</span><span class="p">,</span> <span class="n">b11</span><span class="p">,</span> <span class="n">b22</span><span class="p">,</span> <span class="n">b12</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x2</span><span class="p">,</span> <span class="n">pvec</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="nb">max</span><span class="p">(</span><span class="n">x2</span><span class="p">)</span><span class="o">*</span><span class="mf">1.05</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="nb">max</span><span class="p">(</span><span class="n">pvec</span><span class="p">)</span><span class="o">*</span><span class="mf">1.05</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;$p_2$&quot;</span><span class="p">,</span><span class="n">fontsize</span> <span class="o">=</span> <span class="mi">16</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;$x^*_2$&quot;</span><span class="p">,</span><span class="n">fontsize</span> <span class="o">=</span> <span class="mi">16</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/ce6b25a8aeb0d42a7800ea57cd0ed9a00c07e5fb25c4ba9deb9fb9a7b32dcde4.png" src="_images/ce6b25a8aeb0d42a7800ea57cd0ed9a00c07e5fb25c4ba9deb9fb9a7b32dcde4.png" />
+<img alt="_images/044fbbf3626e62f95290eed64b5f41194d55d4fa1592fe9c5a817ebae0d9cea4.png" src="_images/044fbbf3626e62f95290eed64b5f41194d55d4fa1592fe9c5a817ebae0d9cea4.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">agg_dem_1_tlog</span><span class="p">(</span><span class="n">consumers</span><span class="p">,</span> <span class="n">p1</span><span class="p">,</span><span class="n">p2</span><span class="p">,</span> <span class="n">a0</span><span class="p">,</span> <span class="n">a1</span><span class="p">,</span> <span class="n">a2</span><span class="p">,</span> <span class="n">b11</span><span class="p">,</span> <span class="n">b22</span><span class="p">,</span> <span class="n">b12</span><span class="p">):</span>
+    <span class="n">x1_agg</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">for</span> <span class="n">income_group</span> <span class="ow">in</span> <span class="n">consumers</span><span class="p">:</span>
+        <span class="n">x1_agg</span> <span class="o">+=</span> <span class="n">income_group</span><span class="p">[</span><span class="s2">&quot;nr&quot;</span><span class="p">]</span><span class="o">*</span><span class="n">vec_dem_fun_1_tlog</span><span class="p">(</span><span class="n">p1</span><span class="p">,</span><span class="n">p2</span><span class="p">,</span><span class="n">income_group</span><span class="p">[</span><span class="s2">&quot;I&quot;</span><span class="p">],</span> <span class="n">a0</span><span class="p">,</span> <span class="n">a1</span><span class="p">,</span> <span class="n">a2</span><span class="p">,</span> <span class="n">b11</span><span class="p">,</span> <span class="n">b22</span><span class="p">,</span> <span class="n">b12</span><span class="p">)</span>  
+    <span class="k">return</span> <span class="n">x1_agg</span>
+
+<span class="k">def</span> <span class="nf">agg_dem_2_tlog</span><span class="p">(</span><span class="n">consumers</span><span class="p">,</span> <span class="n">p1</span><span class="p">,</span><span class="n">p2</span><span class="p">,</span><span class="n">a0</span><span class="p">,</span> <span class="n">a1</span><span class="p">,</span> <span class="n">a2</span><span class="p">,</span> <span class="n">b11</span><span class="p">,</span> <span class="n">b22</span><span class="p">,</span> <span class="n">b12</span><span class="p">):</span>
+    <span class="n">x2_agg</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">for</span> <span class="n">income_group</span> <span class="ow">in</span> <span class="n">consumers</span><span class="p">:</span>
+        <span class="n">x2_agg</span> <span class="o">+=</span> <span class="n">income_group</span><span class="p">[</span><span class="s2">&quot;nr&quot;</span><span class="p">]</span><span class="o">*</span><span class="n">vec_dem_fun_2_tlog</span><span class="p">(</span><span class="n">p1</span><span class="p">,</span><span class="n">p2</span><span class="p">,</span><span class="n">income_group</span><span class="p">[</span><span class="s2">&quot;I&quot;</span><span class="p">],</span><span class="n">a0</span><span class="p">,</span> <span class="n">a1</span><span class="p">,</span> <span class="n">a2</span><span class="p">,</span> <span class="n">b11</span><span class="p">,</span> <span class="n">b22</span><span class="p">,</span> <span class="n">b12</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">x2_agg</span>
+
+
+<span class="k">def</span> <span class="nf">repr_consumer_population</span><span class="p">(</span><span class="n">consumers</span><span class="p">):</span>
+    <span class="n">Itot</span> <span class="o">=</span> <span class="n">nr_tot</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">for</span> <span class="n">income_group</span> <span class="ow">in</span> <span class="n">consumers</span><span class="p">:</span>
+        <span class="n">Itot</span> <span class="o">+=</span> <span class="n">income_group</span><span class="p">[</span><span class="s2">&quot;nr&quot;</span><span class="p">]</span><span class="o">*</span><span class="n">income_group</span><span class="p">[</span><span class="s2">&quot;I&quot;</span><span class="p">]</span>
+        <span class="n">nr_tot</span> <span class="o">+=</span> <span class="n">income_group</span><span class="p">[</span><span class="s2">&quot;nr&quot;</span><span class="p">]</span>
+    <span class="k">return</span> <span class="p">[{</span><span class="s2">&quot;nr&quot;</span><span class="p">:</span><span class="n">nr_tot</span><span class="p">,</span> <span class="s2">&quot;I&quot;</span><span class="p">:</span><span class="n">Itot</span><span class="o">/</span><span class="n">nr_tot</span><span class="p">}]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">x1_agg_tlog</span> <span class="o">=</span> <span class="n">agg_dem_1_tlog</span><span class="p">(</span><span class="n">consumers</span><span class="p">,</span> <span class="n">pvec</span><span class="p">,</span><span class="n">p2</span><span class="p">,</span><span class="n">a0</span><span class="p">,</span> <span class="n">a1</span><span class="p">,</span> <span class="n">a2</span><span class="p">,</span> <span class="n">b11</span><span class="p">,</span> <span class="n">b22</span><span class="p">,</span> <span class="n">b12</span><span class="p">)</span>
+<span class="n">x1_agg_tlog_repr</span> <span class="o">=</span> <span class="n">agg_dem_1_tlog</span><span class="p">(</span><span class="n">repr_consumer_population</span><span class="p">(</span><span class="n">consumers</span><span class="p">),</span><span class="n">pvec</span><span class="p">,</span><span class="n">p2</span><span class="p">,</span><span class="n">a0</span><span class="p">,</span> <span class="n">a1</span><span class="p">,</span> <span class="n">a2</span><span class="p">,</span> <span class="n">b11</span><span class="p">,</span> <span class="n">b22</span><span class="p">,</span> <span class="n">b12</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x1_agg_tlog</span><span class="p">,</span> <span class="n">pvec</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x1_agg_tlog_repr</span><span class="p">,</span> <span class="n">pvec</span><span class="p">,</span> <span class="s2">&quot;r--&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="nb">max</span><span class="p">(</span><span class="n">x1_agg_tlog</span><span class="p">)</span><span class="o">*</span><span class="mf">1.05</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="nb">max</span><span class="p">(</span><span class="n">pvec</span><span class="p">)</span><span class="o">*</span><span class="mf">1.05</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;$p_1$&quot;</span><span class="p">,</span><span class="n">fontsize</span> <span class="o">=</span> <span class="mi">16</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;$\mathcal</span><span class="si">{X}</span><span class="s2">^*_1$&quot;</span><span class="p">,</span><span class="n">fontsize</span> <span class="o">=</span> <span class="mi">16</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+
+<span class="n">x2_agg_tlog</span> <span class="o">=</span> <span class="n">agg_dem_2_tlog</span><span class="p">(</span><span class="n">consumers</span><span class="p">,</span> <span class="n">p1</span><span class="p">,</span> <span class="n">pvec</span><span class="p">,</span><span class="n">a0</span><span class="p">,</span> <span class="n">a1</span><span class="p">,</span> <span class="n">a2</span><span class="p">,</span> <span class="n">b11</span><span class="p">,</span> <span class="n">b22</span><span class="p">,</span> <span class="n">b12</span><span class="p">)</span>
+<span class="n">x2_agg_tlog_repr</span> <span class="o">=</span> <span class="n">agg_dem_2_tlog</span><span class="p">(</span><span class="n">repr_consumer_population</span><span class="p">(</span><span class="n">consumers</span><span class="p">),</span><span class="n">p1</span><span class="p">,</span> <span class="n">pvec</span><span class="p">,</span><span class="n">a0</span><span class="p">,</span> <span class="n">a1</span><span class="p">,</span> <span class="n">a2</span><span class="p">,</span> <span class="n">b11</span><span class="p">,</span> <span class="n">b22</span><span class="p">,</span> <span class="n">b12</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x2_agg_tlog</span><span class="p">,</span> <span class="n">pvec</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x2_agg_tlog_repr</span><span class="p">,</span> <span class="n">pvec</span><span class="p">,</span> <span class="s2">&quot;r--&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="nb">max</span><span class="p">(</span><span class="n">x2_agg_tlog</span><span class="p">)</span><span class="o">*</span><span class="mf">1.05</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="nb">max</span><span class="p">(</span><span class="n">pvec</span><span class="p">)</span><span class="o">*</span><span class="mf">1.05</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;$p_2$&quot;</span><span class="p">,</span><span class="n">fontsize</span> <span class="o">=</span> <span class="mi">16</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;$\mathcal</span><span class="si">{X}</span><span class="s2">^*_2$&quot;</span><span class="p">,</span><span class="n">fontsize</span> <span class="o">=</span> <span class="mi">16</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/0109a550008c56fb29eaa1b3723f1e4f3b91bf8a63418b1fa8c9032450f826bd.png" src="_images/0109a550008c56fb29eaa1b3723f1e4f3b91bf8a63418b1fa8c9032450f826bd.png" />
+<img alt="_images/e6caba93a1717f9f66a00949c826ac6f09cda487c4f57fc2c0d2a9e29e2a9da1.png" src="_images/e6caba93a1717f9f66a00949c826ac6f09cda487c4f57fc2c0d2a9e29e2a9da1.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">pvec</span><span class="p">,</span> <span class="n">x1_agg_tlog</span><span class="o">-</span><span class="n">x1_agg_tlog_repr</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;$p_1$&quot;</span><span class="p">,</span><span class="n">fontsize</span> <span class="o">=</span> <span class="mi">16</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;$\mathcal</span><span class="si">{X}</span><span class="s2">^*_1 - \mathcal</span><span class="si">{X}</span><span class="s2">^{*a}_1$&quot;</span><span class="p">,</span><span class="n">fontsize</span> <span class="o">=</span> <span class="mi">16</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">pvec</span><span class="p">,</span> <span class="n">x2_agg_tlog</span><span class="o">-</span><span class="n">x2_agg_tlog_repr</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;$p_2$&quot;</span><span class="p">,</span><span class="n">fontsize</span> <span class="o">=</span> <span class="mi">16</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;$\mathcal</span><span class="si">{X}</span><span class="s2">^*_2 - \mathcal</span><span class="si">{X}</span><span class="s2">^{*a}_2$&quot;</span><span class="p">,</span><span class="n">fontsize</span> <span class="o">=</span> <span class="mi">16</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/e4fcb9c992d15039c135d4b89a8f05885f88a34046b9c59e8eb2ae9a319656db.png" src="_images/e4fcb9c992d15039c135d4b89a8f05885f88a34046b9c59e8eb2ae9a319656db.png" />
+<img alt="_images/e70e9a3b7fa78a3b1ecd2e8642b64d6963620b76c6c723e8c0fae2ed85bf54ff.png" src="_images/e70e9a3b7fa78a3b1ecd2e8642b64d6963620b76c6c723e8c0fae2ed85bf54ff.png" />
+</div>
+</div>
+</section>
+<section id="id3">
+<h2>Фирми и максимизиране на печалбата (1)<a class="headerlink" href="#id3" title="Permalink to this heading">#</a></h2>
+<p>Печалба:</p>
+<div class="math notranslate nohighlight">
+\[\Pi = pq - TC(q)\]</div>
+<p>Цената <span class="math notranslate nohighlight">\(p\)</span> се приема за дадена.</p>
+<div class="math notranslate nohighlight">
+\[\frac{d}{dq}\Pi = p - TC'(q) = p- MC(q) = 0 \quad \Rightarrow \quad MC(q) = p\]</div>
+<p>Нека $<span class="math notranslate nohighlight">\(TC(q)=aq^2+c, \quad a,c&gt;0.\)</span>$</p>
+<p>Тогава условието <span class="math notranslate nohighlight">\(MC=p\)</span> дава</p>
+<div class="math notranslate nohighlight">
+\[q = \frac{p}{2a}.\]</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">a_1</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">q1</span> <span class="o">=</span> <span class="n">pvec</span><span class="o">/</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">a_1</span><span class="p">)</span>
+<span class="n">a_2</span> <span class="o">=</span> <span class="mi">2</span>
+<span class="n">q2</span> <span class="o">=</span> <span class="n">pvec</span><span class="o">/</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">a_2</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">q1</span><span class="p">,</span> <span class="n">pvec</span><span class="p">,</span><span class="n">label</span><span class="o">=</span><span class="sa">f</span><span class="s2">&quot;a=</span><span class="si">{</span><span class="n">a_1</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">q2</span><span class="p">,</span> <span class="n">pvec</span><span class="p">,</span><span class="n">label</span><span class="o">=</span><span class="sa">f</span><span class="s2">&quot;a=</span><span class="si">{</span><span class="n">a_2</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;$q$&quot;</span><span class="p">,</span><span class="n">fontsize</span> <span class="o">=</span> <span class="mi">16</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;$p$&quot;</span><span class="p">,</span><span class="n">fontsize</span> <span class="o">=</span> <span class="mi">16</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/9fc7fe69b944671dc4d89059346aa86e2206031c4c954a9b6ab4463517684b14.png" src="_images/9fc7fe69b944671dc4d89059346aa86e2206031c4c954a9b6ab4463517684b14.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">avec</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mf">1.3</span><span class="p">,</span> <span class="mf">1.5</span><span class="p">]</span>
+<span class="n">nr</span> <span class="o">=</span> <span class="p">[</span><span class="mi">100</span><span class="p">,</span> <span class="mi">200</span><span class="p">,</span> <span class="mi">100</span><span class="p">]</span>
+
+<span class="n">qtot</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros_like</span><span class="p">(</span><span class="n">pvec</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">a</span><span class="p">,</span><span class="n">n</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">avec</span><span class="p">,</span><span class="n">nr</span><span class="p">):</span>
+    <span class="n">qtot</span> <span class="o">+=</span> <span class="n">n</span> <span class="o">*</span> <span class="n">pvec</span><span class="o">/</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">a</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">qtot</span><span class="p">,</span> <span class="n">pvec</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;$Q$&quot;</span><span class="p">,</span><span class="n">fontsize</span> <span class="o">=</span> <span class="mi">16</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;$p$&quot;</span><span class="p">,</span><span class="n">fontsize</span> <span class="o">=</span> <span class="mi">16</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/7b489724d891bd9a80cd9413827d2105c48e3024bf80c7b00a46a28c34c8b7f2.png" src="_images/7b489724d891bd9a80cd9413827d2105c48e3024bf80c7b00a46a28c34c8b7f2.png" />
+</div>
+</div>
+</section>
+<section id="id4">
+<h2>Фирми и максимизиране на печалбата (2)<a class="headerlink" href="#id4" title="Permalink to this heading">#</a></h2>
+<p>Производствена технология:</p>
+<div class="math notranslate nohighlight">
+\[ q(L) = AL^\gamma, \qquad A&gt;0,~\gamma \in (0,1)\]</div>
+<p>Печалба:</p>
+<div class="math notranslate nohighlight">
+\[\Pi = p q(L) - WL\]</div>
+<p>Цената <span class="math notranslate nohighlight">\(p\)</span> и заплатата <span class="math notranslate nohighlight">\(W\)</span> се приемат за дадени.</p>
+<div class="math notranslate nohighlight">
+\[ \frac{d}{dL}\Pi = p A \gamma L^{\gamma-1} - W = 0 \qquad \Rightarrow \qquad L = \left[ \frac{p A \gamma}{W} \right]^{\frac{1}{1-\gamma}} \]</div>
+<p>Тогава</p>
+<div class="math notranslate nohighlight">
+\[q^* = A \left[ \frac{p A \gamma}{W} \right]^{\frac{\gamma}{1-\gamma}} \]</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">A</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">W</span> <span class="o">=</span> <span class="mi">2</span>
+<span class="n">gamma_1</span> <span class="o">=</span> <span class="mf">0.6</span>
+<span class="n">gamma_2</span> <span class="o">=</span> <span class="mf">0.4</span>
+
+<span class="n">q1</span> <span class="o">=</span> <span class="n">A</span><span class="o">*</span><span class="p">(</span><span class="n">pvec</span><span class="o">*</span><span class="n">A</span><span class="o">*</span><span class="n">gamma_1</span><span class="o">/</span><span class="n">W</span><span class="p">)</span><span class="o">**</span><span class="p">(</span><span class="n">gamma_1</span><span class="o">/</span><span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="n">gamma_1</span><span class="p">))</span>
+<span class="n">q2</span> <span class="o">=</span> <span class="n">A</span><span class="o">*</span><span class="p">(</span><span class="n">pvec</span><span class="o">*</span><span class="n">A</span><span class="o">*</span><span class="n">gamma_2</span><span class="o">/</span><span class="n">W</span><span class="p">)</span><span class="o">**</span><span class="p">(</span><span class="n">gamma_2</span><span class="o">/</span><span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="n">gamma_2</span><span class="p">))</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">q1</span><span class="p">,</span> <span class="n">pvec</span><span class="p">,</span><span class="n">label</span><span class="o">=</span><span class="sa">f</span><span class="s2">&quot;$</span><span class="se">\\</span><span class="s2">gamma=</span><span class="si">{</span><span class="n">gamma_1</span><span class="si">}</span><span class="s2">$&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">q2</span><span class="p">,</span> <span class="n">pvec</span><span class="p">,</span><span class="n">label</span><span class="o">=</span><span class="sa">f</span><span class="s2">&quot;$</span><span class="se">\\</span><span class="s2">gamma=</span><span class="si">{</span><span class="n">gamma_2</span><span class="si">}</span><span class="s2">$&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;$q$&quot;</span><span class="p">,</span><span class="n">fontsize</span> <span class="o">=</span> <span class="mi">16</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;$p$&quot;</span><span class="p">,</span><span class="n">fontsize</span> <span class="o">=</span> <span class="mi">16</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/86be2d3ca04f1c61304537a65f6e84786074cce51e7ffb8af4c6db1a2ea92270.png" src="_images/86be2d3ca04f1c61304537a65f6e84786074cce51e7ffb8af4c6db1a2ea92270.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">gvec</span> <span class="o">=</span> <span class="p">[</span><span class="mf">0.3</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.7</span><span class="p">]</span>
+<span class="n">nr</span> <span class="o">=</span> <span class="p">[</span><span class="mi">100</span><span class="p">,</span> <span class="mi">200</span><span class="p">,</span> <span class="mi">100</span><span class="p">]</span>
+
+<span class="n">qtot</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros_like</span><span class="p">(</span><span class="n">pvec</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">g</span><span class="p">,</span><span class="n">n</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">gvec</span><span class="p">,</span><span class="n">nr</span><span class="p">):</span>
+    <span class="n">qtot</span> <span class="o">+=</span> <span class="n">n</span> <span class="o">*</span> <span class="n">A</span><span class="o">*</span><span class="p">(</span><span class="n">pvec</span><span class="o">*</span><span class="n">A</span><span class="o">*</span><span class="n">g</span><span class="o">/</span><span class="n">W</span><span class="p">)</span><span class="o">**</span><span class="p">(</span><span class="n">g</span><span class="o">/</span><span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="n">g</span><span class="p">))</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">qtot</span><span class="p">,</span> <span class="n">pvec</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">pvec</span><span class="o">*</span><span class="mi">100</span><span class="p">,</span> <span class="n">pvec</span><span class="p">,</span> <span class="s1">&#39;k&#39;</span><span class="p">,</span> <span class="n">linewidth</span> <span class="o">=</span> <span class="mf">0.2</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;$Q$&quot;</span><span class="p">,</span><span class="n">fontsize</span> <span class="o">=</span> <span class="mi">16</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;$p$&quot;</span><span class="p">,</span><span class="n">fontsize</span> <span class="o">=</span> <span class="mi">16</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/1265a8b4d0a4f9c477e1367ff6494d912a6f02ca0a52acf82e5ff08d117b8106.png" src="_images/1265a8b4d0a4f9c477e1367ff6494d912a6f02ca0a52acf82e5ff08d117b8106.png" />
+</div>
+</div>
+</section>
+<section id="id5">
+<h2>Определяне на пазарните цени<a class="headerlink" href="#id5" title="Permalink to this heading">#</a></h2>
+<p>В изложението дотук домакинствата приемаха цените за дадени, а фирмите от своя страна правеха същото. Как тогава се определят съответните цени?</p>
+<p>В стандартните макроикономически модели това става от условия за изравняване на търсене и предлагане.</p>
+<p>Нека стока 1 се произвежда от <span class="math notranslate nohighlight">\(m_1\)</span> на брой еднакви фирми, всяка от които се описва с оптималното предлагане <span class="math notranslate nohighlight">\(q^* = \frac{p_1}{2a_1}\)</span>. Аналогично, стока 2 се произвежда от <span class="math notranslate nohighlight">\(m_2\)</span> на брой еднакви фирми, всяка от които се описва с оптималното предлагане <span class="math notranslate nohighlight">\(q^* = \frac{p_2}{2a_2}\)</span>.</p>
+<p>Тогава общото предлагане на стоките ще бъде</p>
+<div class="math notranslate nohighlight">
+\[AS_j(p_j) = m_j \frac{p_j}{2 a_j},\quad j=1,2.\]</div>
+<p>Нека също така имаме <span class="math notranslate nohighlight">\(k\)</span> групи домакинства с предпочитания от тип Cobb-Douglas, различаващи се по дохода си. Броят на домакинствата с доход <span class="math notranslate nohighlight">\(I_i\)</span> е <span class="math notranslate nohighlight">\(n_i\)</span>, където <span class="math notranslate nohighlight">\(i=1,\ldots,k\)</span>.</p>
+<p>Тогава общото търсене на стоки 1 и 2 ще бъде съответно</p>
+<div class="math notranslate nohighlight">
+\[AD_1(p_1) = \frac{\alpha}{\alpha+\beta} \frac{\sum_{i=1}^k n_i I_i}{p_1}, \quad AD_2(p_2) = \frac{\beta}{\alpha+\beta} \frac{\sum_{i=1}^k n_i I_i}{p_2}.\]</div>
+<p>Определянето на цената става от условия за изравняване на общото търсене и общото предлагане:</p>
+<div class="math notranslate nohighlight">
+\[AS_j(p_j) = AD_j(p_j),~j=1,2.\]</div>
+<p>Така получаваме</p>
+<div class="math notranslate nohighlight">
+\[p_1 = \left[ \frac{2a_1}{m_1} \frac{\alpha}{\alpha+\beta} \sum_{i=1}^k n_i I_i \right]^{1/2}, \qquad p_2 = \left[ \frac{2a_2}{m_2} \frac{\beta}{\alpha+\beta} \sum_{i=1}^k n_i I_i \right]^{1/2}.\]</div>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                    </div>
+                    
+                </main> <!-- .page__content -->
+                
+
+
+                <footer class="qe-page__footer">
+
+                    <p><a href="https://creativecommons.org/licenses/by-sa/4.0/"><img src="https://licensebuttons.net/l/by-sa/4.0/80x15.png"></a></p>
+
+                    <p>Creative Commons License &ndash; This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International.</p>
+
+                    <p>A theme by <a href="https://quantecon.org">QuantEcon</a></p>
+
+                </footer> <!-- .page__footer -->
+
+            </div> <!-- .page -->
+
+            
+
+            
+            <div class="qe-sidebar bd-sidebar inactive" id="site-navigation">
+
+                <div class="qe-sidebar__header">
+
+
+                    Contents
+
+                </div>
+
+                <nav class="qe-sidebar__nav" id="qe-sidebar-nav" aria-label="Main navigation">
+                    <ul class="nav bd-sidenav nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="intro.html">
+   Ръководство за упражнения по Макроикономика 1
+  </a>
+ </li>
+</ul>
+<ul class="current nav bd-sidenav nav sidenav_l1">
+ <li class="toctree-l1 current active active">
+  <a class="current reference internal" href="#">
+   Основни микроикономически постановки и макроикономическите им следствия
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="GDP.html">
+   Брутен вътрешен продукт и измерители на доход
+  </a>
+ </li>
+</ul>
+
+                </nav>
+
+                <div class="qe-sidebar__footer">
+
+                </div>
+
+            </div> <!-- .sidebar -->
+            
+        </div> <!-- .main -->
+
+        <div class="qe-toolbar">
+
+            <div class="qe-toolbar__inner">
+
+                <ul class="qe-toolbar__main">
+                    <li data-tippy-content="Table of Contents" class="btn__sidebar"><i data-feather="menu"></i></li>
+                    <li data-tippy-content="Home"><a href="intro.html"><i data-feather="home"></i></a></li>
+                    <li class="btn__qelogo"><a href="" title=""><span class="show-for-sr"></span></a></li>
+                </ul>
+
+                <ul class="qe-toolbar__links">
+                    <li class="btn__search">
+                        <form action="search.html" method="get">
+                            <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" accesskey="k">
+                            <i data-feather="search" id="search-icon"></i>
+                        </form>
+                    </li>
+                    <li data-tippy-content="Fullscreen" class="btn__fullscreen"><i data-feather="maximize"></i></li>
+                    <li data-tippy-content="Increase font size" class="btn__plus"><i data-feather="plus-circle"></i></li>
+                    <li data-tippy-content="Decrease font size" class="btn__minus"><i data-feather="minus-circle"></i></li>
+                    <li data-tippy-content="Change contrast" class="btn__contrast"><i data-feather="sunset"></i></li>
+                        <li data-tippy-content="Download PDF" onClick="window.print()"><i data-feather="file"></i></li>
+                    <!--
+                    # Enable if looking for link to specific document hosted on GitHub
+                    <li data-tippy-content="View Source"><a target="_blank" href="https://github.com/executablebooks/jupyter-book/Micro_to_macro.ipynb" download><i data-feather="github"></i></a></li>
+                    -->
+                    <li data-tippy-content="View Source"><a target="_blank" href="https://github.com/executablebooks/jupyter-book" download><i data-feather="github"></i></a></li>
+                </ul>
+
+            </div>
+
+        </div> <!-- .toolbar -->
+        <div id="downloadPDFModal" style="display: none;">
+            <ul class="pdf-options" style="display: block;">
+                <li class="download-pdf-book" onClick="window.print()">
+                    <p>Lecture (PDF)</p>
+                </li>
+                <li class="download-pdf-file">
+                    <a href="" download><p>Book (PDF)</p></a>
+                </li>
+            </ul>
+        </div>
+        <div id="settingsModal" style="display: none;">
+            <p class="modal-title"> Notebook Launcher </p>
+            <div class="modal-desc">
+            <p>
+                Choose public or private cloud service for "Launch" button.
+            </p>
+            </div>
+            <p class="modal-subtitle">Select a server</p>
+            <ul class="modal-servers">
+            <li class="active launcher-public">
+                <span class="label">Public</span>
+                <select id="launcher-public-input">
+                
+                </select>
+                <i class="fas fa-check-circle"></i>
+            </li>
+            <li class="launcher-private">
+                <span class="label">Private</span>
+                <input type="text" id="launcher-private-input" data-repourl="" data-urlpath="" data-branch=>
+                <i class="fas fa-check-circle"></i>
+            </li>
+            </ul>
+            <p class="launch"><a href="" id="advancedLaunchButton" target="_blank">Launch Notebook</a></p>
+            <script>
+                // QuantEcon Notebook Launcher
+                const launcherTypeElements = document.querySelectorAll('#settingsModal .modal-servers li');
+                // Highlight the server type if previous selection exists
+                if (typeof localStorage.launcherType !== 'undefined') {
+                  for (var i = 0; i < launcherTypeElements.length; i++) {
+                    launcherTypeElements[i].classList.remove('active');
+                    if ( launcherTypeElements[i].classList.contains(localStorage.launcherType) ) {
+                      launcherTypeElements[i].classList.add('active');
+                    }
+                  }
+                }
+                // Highlight server type on click and set local storage value
+                for (var i = 0; i < launcherTypeElements.length; i++) {
+                  launcherTypeElements[i].addEventListener('click', function() {
+                    for (var j = 0; j < launcherTypeElements.length; j++) {
+                      launcherTypeElements[j].classList.remove('active');
+                    }
+                    this.classList.add('active');
+                    if ( this.classList.contains('launcher-private') ) {
+                      localStorage.launcherType = 'launcher-private';
+                    } else if ( this.classList.contains('launcher-public') ) {
+                      localStorage.launcherType = 'launcher-public';
+                    }
+                    setLaunchServer();
+                  })
+                }
+                const launcherPublic = document.getElementById('launcher-public-input');
+                const launcherPrivate = document.getElementById('launcher-private-input');
+                const pageName = "Micro_to_macro";
+                const repoURL = "";
+                const urlPath = "";
+                const branch = ""
+                const launchNotebookLink = document.getElementById('advancedLaunchButton');
+
+                // Highlight public server option if previous selection exists
+                if (typeof localStorage.launcherPublic !== 'undefined') {
+                  launcherPublic.value = localStorage.launcherPublic;
+                }
+                // Update local storage upon public server selection
+                launcherPublic.addEventListener('change', (event) => {
+                  setLaunchServer();
+                });
+                // Populate private server input if previous entry exists
+                if (typeof localStorage.launcherPrivate !== 'undefined') {
+                  launcherPrivate.value = localStorage.launcherPrivate;
+                }
+                // Update local storage when a private server is entered
+                launcherPrivate.addEventListener('input', (event) => {
+                  setLaunchServer();
+                });
+
+                // Function to update the "Launch Notebook" link href
+                function setLaunchServer() {
+                  launchNotebookLink.removeAttribute("style")
+                  if ( localStorage.launcherType == 'launcher-private' ) {
+                    let repoPrefix = "/user-redirect/git-pull?repo=" + repoURL + "&branch=" + branch + "&urlpath=" + urlPath;
+                    launcherPrivateValue = launcherPrivate.value
+                    if (!launcherPrivateValue) {
+                        launchNotebookLink.removeAttribute("href")
+                        launchNotebookLink.style.background = "grey"
+                        return
+                    }
+                    localStorage.launcherPrivate = launcherPrivateValue;
+                    privateServer = localStorage.launcherPrivate.replace(/\/$/, "")
+                    if (!privateServer.includes("http")) {
+                        privateServer = "http://" + privateServer
+                    }
+                    launchNotebookLinkURL = privateServer + repoPrefix;
+                  } else if ( localStorage.launcherType == 'launcher-public' ) {
+                    launcherPublicValue = launcherPublic.options[launcherPublic.selectedIndex].value;
+                    localStorage.launcherPublic = launcherPublicValue;
+                    launchNotebookLinkURL = localStorage.launcherPublic;
+                  }
+                  if (launchNotebookLinkURL) launchNotebookLink.href = launchNotebookLinkURL;
+                }
+                // Check if user has previously selected a server
+                if ( (typeof localStorage.launcherPrivate !== 'undefined') || (typeof localStorage.launcherPublic !== 'undefined') ) {
+                  setLaunchServer();
+                }
+                </script>
+
+        </div>
+
+    </div> <!-- .wrapper-->
+  </body>
+</html>

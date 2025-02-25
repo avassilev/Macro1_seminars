@@ -1,0 +1,10 @@
+/* Hide `QuantEcon` in the toolbar */
+.qe-toolbar__inner>ul>li.btn__qelogo a {
+    background: url('') no-repeat 0 0 !important;
+    background-size: 105px 30px !important;
+    display: block !important;
+    height: 30px !important;
+    overflow: hidden !important;
+    width: 105px !important;
+    }
+
