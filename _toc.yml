@@ -6,3 +6,5 @@ root: intro
 chapters:
 - file: Micro_to_macro
 - file: GDP
+- file: Inflation
+- file: Labour
