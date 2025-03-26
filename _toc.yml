@@ -8,3 +8,5 @@ chapters:
 - file: GDP
 - file: Inflation
 - file: Labour
+- file: Fin_interm
+- file: SRun_closed
