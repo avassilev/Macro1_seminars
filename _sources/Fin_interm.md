@@ -139,8 +139,8 @@ $$L =  \left[\frac{\alpha A}{R}\right]^{\frac{1}{1-\alpha}} $$
 
 $$R^* = \frac{- \bar{D} a + 2 \bar{L} a + \bar{L} b}{2 a^{2} + 2 a b}, \qquad r^* = \frac{- \bar{D} a - 2 \bar{D} b + \bar{L} b}{2 a b + 2 b^{2}}$$
 
-$$ \frac{\partial R^*}{\partial \bar{L}} = \frac{2 a + b}{2 a^{2} + 2 a b} > 0, \qquad  \frac{\partial R^*}{\partial \bar{L}} = \frac{b}{2 a b + 2 b^{2}} > 0$$
+$$ \frac{\partial R^*}{\partial \bar{L}} = \frac{2 a + b}{2 a^{2} + 2 a b} > 0, \qquad  \frac{\partial r^*}{\partial \bar{L}} = \frac{b}{2 a b + 2 b^{2}} > 0$$
 
-$$ \frac{\partial R^*}{\partial \bar{D}} = - \frac{a}{2 a^{2} + 2 a b} < 0, \qquad  \frac{\partial R^*}{\partial \bar{D}} = -\frac{ a + 2 b}{2 a b + 2 b^{2}} < 0$$
+$$ \frac{\partial R^*}{\partial \bar{D}} = - \frac{a}{2 a^{2} + 2 a b} < 0, \qquad  \frac{\partial r^*}{\partial \bar{D}} = -\frac{ a + 2 b}{2 a b + 2 b^{2}} < 0$$
 
 ```
