@@ -6,6 +6,7 @@
 ```{prf:example} 
 Интерактивно упражнение -- тенденции и цикличност в БВП на избрани страни от ЕС
 
+[R код](https://github.com/avassilev/Macro1_seminars/raw/refs/heads/master/ref_files/GDP_trends.R)
 ```
 
 <br>
@@ -142,10 +143,18 @@ $$ \hat{L}_t = \frac{\bar{u}-u_t}{1-\bar{u}} = \frac{0.10-0.19}{1-0.10} = -10\%.
 ```
 
 ```{dropdown} Решение
-Имаме $\pi_t-\bar{\pi} = -0.05$, $\bar{u}-u_t = -0.02$, $b=2$  и $\varepsilon_{2,t} = 0$. Уравнението 
-$$ \pi_t=\bar{\pi}+b \frac{\bar{u}-u_t}{1-\bar{u}} +\varepsilon_{2,t} $$ може да бъде записано като
-$$\pi_t-\bar{\pi} =  \frac{b}{1-\bar{u}}(\bar{u}-u_t) + \varepsilon_{2,t}$$ и имаме
+Имаме $\pi_t-\bar{\pi} = -0.05$, $\bar{u}-u_t = -0.02$, $b=2$  и $\varepsilon_{2,t} = 0$. Уравнението
+
+$$ \pi_t=\bar{\pi}+b \frac{\bar{u}-u_t}{1-\bar{u}} +\varepsilon_{2,t} $$ 
+
+може да бъде записано като
+
+$$\pi_t-\bar{\pi} =  \frac{b}{1-\bar{u}}(\bar{u}-u_t) + \varepsilon_{2,t}$$
+
+и имаме
+
 $$-0.05 =  \frac{2}{1-\bar{u}}(-0.02) + 0,$$
+
 откъдето получаваме $\bar{u} = 20\%$.
 ```
 
