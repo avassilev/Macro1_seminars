@@ -163,6 +163,7 @@
                             <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Основни показатели в краткосрочните модели</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#is-mp-pc">Основни връзки в IS-MP-PC модела</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Варианти на парична политика в IS-MP-PC модела</a></li>
 </ul>
                             <p class="logo">
                                 
@@ -411,12 +412,15 @@
 \[-0.05 =  \frac{2}{1-\bar{u}}(-0.02) + 0,\]</div>
 <p class="sd-card-text">откъдето получаваме <span class="math notranslate nohighlight">\(\bar{u} = 20\%\)</span>.</p>
 </div>
-</details><br>
+</details></section>
+<section id="id3">
+<h2>Варианти на парична политика в IS-MP-PC модела<a class="headerlink" href="#id3" title="Permalink to this heading">#</a></h2>
+<br>
 <div class="exercise problem admonition" id="constrir1">
 
 <p class="admonition-title"><span class="caption-number">Exercise 50 </span></p>
 <section id="exercise-content">
-<p>В условията на парична политика с постоянен реален лихвен процент, определете дали следните реализации на макроикономически величини са причинени от шокове в търсенето или в предлагането:</p>
+<p>Разглеждаме затворена икономика, в която се провежда парична политика с поддържане на постоянен реален лихвен процент. Известно е, че в икономиката се реализира шок. На основата на дадената по-долу информация за стойностите на основни макроикономически величини определете дали съответният шок е от страна на търсенето или на предлагането:</p>
 <ul class="simple">
 <li><p><span class="math notranslate nohighlight">\(\hat{y}_t = 0\%\)</span>, <span class="math notranslate nohighlight">\(\pi_t=3\%\)</span></p></li>
 <li><p><span class="math notranslate nohighlight">\(\hat{y}_t = -2\%\)</span>, <span class="math notranslate nohighlight">\(\pi_t=1\%\)</span></p></li>
@@ -424,7 +428,290 @@
 </section>
 </div>
 <br>
+<div class="exercise problem admonition" id="SRun_closed-exercise-12">
+
+<p class="admonition-title"><span class="caption-number">Exercise 51 </span></p>
+<section id="exercise-content">
+<p>За IS-MP-PC модел с провеждане на парична политика при използване на квадратична функция на загубите е известно, че:</p>
+<ul class="simple">
+<li><p>Инфлационната цел на централната банка e 5%.</p></li>
+<li><p>Икономиката може да бъде описана с линейна еднофакторна производствена функция.</p></li>
+<li><p>Естествената норма на безработица е 10%.</p></li>
+<li><p>Кривата на Филипс има вида</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[ \pi_t = \bar{\pi} + 0.5 \hat{y}_t + \varepsilon_{2,t}. \]</div>
+<ul class="simple">
+<li><p>Коефициентът на относителни предпочитания на централната банка между отклонения от инфлационната цел и от потенциалното производство има стойност 1.</p></li>
+<li><p>Действителната инфлация е 3%.</p></li>
+</ul>
+<p>На колко е равен коефициентът на безработица за тази икономика?</p>
+</section>
+</div>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Решение</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Търсим <span class="math notranslate nohighlight">\( u_t \)</span>. Условието на задачата ни дава следната информация:</p>
+<div class="math notranslate nohighlight">
+\[ \pi^T = 0.05,~\bar{u} = 0.1,~b=0.5,~\lambda = 1,~\pi_t = 0.03. \]</div>
+<p class="sd-card-text">Знаем, че</p>
+<div class="math notranslate nohighlight">
+\[ \dfrac{\bar{u}-u_t}{1-\bar{u}} = \hat{y}_t, \]</div>
+<p class="sd-card-text">т.е. ще можем да пресметнем <span class="math notranslate nohighlight">\( u_t \)</span>, ако изчислим <span class="math notranslate nohighlight">\( \hat{y}_t \)</span> на база на горната информация.</p>
+<p class="sd-card-text">Оптималното съотношение между инфлацията и отклонението на производството от потенциалната му стойност се задава от</p>
+<div class="math notranslate nohighlight">
+\[ \pi_t  =\pi^T - \dfrac{\lambda}{b}\hat{y}_t .\]</div>
+<p class="sd-card-text">Оттук пресмятаме <span class="math notranslate nohighlight">\( \hat{y}_t = 0.01 \)</span>. Съответно след заместване получаваме, че <span class="math notranslate nohighlight">\( u_t = 0.091 \)</span>, т.е. 9.1%.</p>
+</div>
+</details><br>
+<div class="exercise problem admonition" id="SRun_closed-exercise-13">
+
+<p class="admonition-title"><span class="caption-number">Exercise 52 </span></p>
+<section id="exercise-content">
+<p>Разглеждаме затворена икономика, в която се провежда парична политика с използване на квадратична функция на загубите. Параметърът на относителни предпочитания между отклоненията от инфлационната цел и от потенциалното производство има стойност 1. Известно е също, че:</p>
+<ul class="simple">
+<li><p>Икономиката се характеризира с IS и PC връзките съответно</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[ \hat{y}_t = - \dfrac{1}{2}(r_t - 0.05) + \varepsilon_{1,t}, \]</div>
+<div class="math notranslate nohighlight">
+\[ \pi_t = 0.04 + \hat{y}_t + \varepsilon_{2,t} \]</div>
+<ul class="simple">
+<li><p>Целта на централната банка за инфлацията е точно равна на равновесната инфлация.</p></li>
+<li><p>В икономиката се проявява шок от неизвестен характер и при това положение стойността на инфлацията е 2%.</p></li>
+</ul>
+<p>На колко е равно отклонението на производството от потенциалната му стойност?</p>
+<p>От страна на търсенето или на предлагането е шокът?</p>
+<p>Каква е стойността на реалния лихвен процент?</p>
+</section>
+</div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Решение</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Имаме <span class="math notranslate nohighlight">\(\lambda = 1\)</span>, <span class="math notranslate nohighlight">\(a=0.5\)</span>, <span class="math notranslate nohighlight">\(\bar{r} = 0.05\)</span>, <span class="math notranslate nohighlight">\(\bar{\pi} = 0.04\)</span>, <span class="math notranslate nohighlight">\(b=1\)</span>, <span class="math notranslate nohighlight">\(\pi_t = 0.02\)</span> и <span class="math notranslate nohighlight">\(\pi^T = \bar{\pi}\)</span>.</p>
+<p class="sd-card-text">Оптималното съотношение инфлация-отклонение от потенциалното производство в случая има вида</p>
+<div class="math notranslate nohighlight">
+\[ 0.02 = 0.04 - \frac{1}{1} \hat{y}_t. \]</div>
+<p class="sd-card-text">Оттук получаваме <span class="math notranslate nohighlight">\(\hat{y}_t = 2\%\)</span>.</p>
+<p class="sd-card-text">Доколкото при провеждане на парична политика с използване на квадратична функция на загубите централната банка може напълно да неутрализира шокове от страна на търсенето, става дума за шок в предлагането.</p>
+<p class="sd-card-text">IS връзката в случая има вида</p>
+<div class="math notranslate nohighlight">
+\[ 0.02 = -0.5 (r_t - 0.05) \qquad \Rightarrow \qquad r_t = 1\% .\]</div>
+</div>
+</details><br>
+<div class="exercise problem admonition" id="ismppc1">
+
+<p class="admonition-title"><span class="caption-number">Exercise 53 </span></p>
+<section id="exercise-content">
+<p>В затворена икономика изригва вулкан. Това води до нарушаване на транспортни връзки, унищожаване на реколти и разрушаване на част от инфраструктурата на страната.</p>
+<ul class="simple">
+<li><p>От страна на търсенето или от страна на предлагането е този шок и защо?</p></li>
+<li><p>В рамките на стандартния IS-MP-PC модел в коя връзка фигурира такъв шок – IS, MP или PC уравнението?</p></li>
+</ul>
+</section>
+</div>
+<br>
+<div class="exercise problem admonition" id="SRun_closed-exercise-15">
+
+<p class="admonition-title"><span class="caption-number">Exercise 54 </span></p>
+<section id="exercise-content">
+<p>Разглеждаме модела</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{array}{ll}
+\hat{y}_t = -a(r_t-\bar{r})+\varepsilon_{1,t}  \\
+&amp; \\
+\pi_t-\bar{\pi}=b\hat{y}_t+\varepsilon_{2,t}  \\
+\end{array}\end{split}\]</div>
+<p>Нека централната банка използва функция на загубите</p>
+<div class="math notranslate nohighlight">
+\[L=(\pi_t-\bar{\pi})^2+\lambda (e^{\hat{y}_t}+e^{-\hat{y}_t}-2).\]</div>
+<p>Изведете оптималното от гледна точка на централната банка съотношение между отклонението от потенциалното производство и инфлацията при разглежданата функция на загубите.</p>
+</section>
+</div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Решение</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">След заместване на PC връзката във функцията на загубите получаваме</p>
+<div class="math notranslate nohighlight">
+\[ L=(b\hat{y}_t+\varepsilon_{2,t})^2+\lambda (e^{\hat{y}_t}+e^{-\hat{y}_t}-2). \]</div>
+<p class="sd-card-text">Условието от първи ред е</p>
+<div class="math notranslate nohighlight">
+\[ 2b (b\hat{y}_t+\varepsilon_{2,t}) + \lambda (e^{\hat{y}_t} - e^{-\hat{y}_t}) = 0, \]</div>
+<p class="sd-card-text">което след преобразуване дава</p>
+<div class="math notranslate nohighlight">
+\[ \pi_t = \bar{\pi} - \frac{\lambda}{2b}(e^{\hat{y}_t} - e^{-\hat{y}_t}). \]</div>
+</div>
+</details><br>
+<div class="exercise problem admonition" id="SRun_closed-exercise-16">
+
+<p class="admonition-title"><span class="caption-number">Exercise 55 </span></p>
+<section id="exercise-content">
+<p>Започвате работа в централна банка, която провежда парична политика с използване на квадратична функция на загубите. При инцидент в трезора златно кюлче удря управителя на банката и той забравя параметъра си на относителни предпочитания между отклоненията от инфлационната цел и от потенциалното производство. Провеждането на паричната политика е застрашено и Вие трябва да помогнете бързо да се възстанови забравеният параметър. Разполагате със следната информация:</p>
+<ul class="simple">
+<li><p>Икономиката се характеризира с IS и PC връзките съответно</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[ \hat{y}_t = - \dfrac{1}{2}(r_t - 0.04) + \varepsilon_{1,t},\]</div>
+<div class="math notranslate nohighlight">
+\[ \pi_t = 0.02 + \hat{y}_t + \varepsilon_{2,t} \]</div>
+<ul class="simple">
+<li><p>Целта на централната банка за инфлацията е точно равна на равновесната инфлация.</p></li>
+<li><p>През предходния период инфлацията е била нулева, а отклонението от потенциалното производство е имало стойност <span class="math notranslate nohighlight">\(1\%\)</span>.</p></li>
+</ul>
+<p>Възстановете забравения параметър, като покажете точно направените за целта изчисления. При тази стойност на параметъра, колко е стойността на инфлацията за шок в търсенето, който е равен на <span class="math notranslate nohighlight">\(0.01\)</span>?</p>
+</section>
+</div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Решение</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Първото подусловие на задачата изисква да се намери параметърът на относителни предпочитания между отклоненията от инфлационната цел и от потенциалното производство, т.е. <span class="math notranslate nohighlight">\( \lambda \)</span>. Този параметър фигурира във връзката, описваща оптималното съотношение между инфлация и отклонение от потенциалното производство:</p>
+<div class="math notranslate nohighlight">
+\[ \pi_t  = \pi^T - \frac{\lambda}{b}\hat{y}_t. \]</div>
+<p class="sd-card-text">От първата точка на дадената допълнителна информация може да се намери стойността на <span class="math notranslate nohighlight">\( b \)</span>, а именно <span class="math notranslate nohighlight">\( b=1 \)</span> от кривата на Филипс.  От втората точка имаме <span class="math notranslate nohighlight">\( \pi^T=\bar{\pi} \)</span> и тогава (отново от кривата на Филипс) получаваме, че <span class="math notranslate nohighlight">\( \pi^T = 0.02 \)</span>. Връзката, описваща оптималното съотношение между инфлация и отклонение от потенциалното производство, важи за всеки период и тогава от третата точка на допълнителната информация получаваме</p>
+<div class="math notranslate nohighlight">
+\[ 0 = 0.02 - \frac{\lambda}{1}0.01 \Rightarrow -0.02 = -\lambda  (0.01) \Rightarrow \lambda = 2. \]</div>
+<p class="sd-card-text">Отговорът на второто подусловие не изисква пресмятания, тъй като е известно, че шок в търсенето може да бъде напълно неутрализиран от паричната политика и инфлацията ще остане равна на равновесната при произволна стойност на шока и на параметъра <span class="math notranslate nohighlight">\( \lambda &gt; 0\)</span>.</p>
+</div>
+</details><br>
+<div class="exercise problem admonition" id="ismppc2">
+
+<p class="admonition-title"><span class="caption-number">Exercise 56 </span></p>
+<section id="exercise-content">
+<p>Вие сте съветник на централна банка, която провежда парична политика с използване на квадратична функция на загубите. След тежък коктейл се оказва, че управителният съвет на банката е забравил стойността на параметъра на относителни предпочитания между отклоненията от инфлационната цел и от потенциалното производство. Провеждането на паричната политика е застрашено и Вие трябва да помогнете бързо да се възстанови забравеният параметър. Разполагате със следната информация:</p>
+<ul class="simple">
+<li><p>Икономиката се характеризира с IS и PC връзките съответно</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[ \hat{y}_t = - \dfrac{1}{2}(r_t - 0.04) + \varepsilon_{1,t}, \]</div>
+<div class="math notranslate nohighlight">
+\[ \pi_t = 0.03 + 2\hat{y}_t + \varepsilon_{2,t} \]</div>
+<ul class="simple">
+<li><p>Целта на централната банка за инфлацията е точно равна на равновесната инфлация.</p></li>
+<li><p>През предходния период инфлацията е била <span class="math notranslate nohighlight">\(2\%\)</span>, а отклонението от потенциалното производство е имало стойност също <span class="math notranslate nohighlight">\(2\%\)</span>.</p></li>
+</ul>
+<p>Възстановете забравения параметър, като покажете точно направените за целта изчисления.</p>
+</section>
+</div>
+<br>
+<div class="exercise problem admonition" id="SRun_closed-exercise-18">
+
+<p class="admonition-title"><span class="caption-number">Exercise 57 </span></p>
+<section id="exercise-content">
+<p>За IS-MP-PC модел с провеждане на парична политика при използване на квадратична функция на загубите е известно, че:</p>
+<ol class="arabic simple">
+<li><p>Инфлационната цел на централната банка и равновесната инфлация са равни.</p></li>
+<li><p>При шок в търсенето <span class="math notranslate nohighlight">\( \varepsilon_{1,t} = 0.01 \)</span> реалният лихвен процент надвишава равновесната си стойност с <span class="math notranslate nohighlight">\( 0.02 \)</span> (2 процентни пункта).</p></li>
+<li><p>При шок в предлагането <span class="math notranslate nohighlight">\( \varepsilon_{2,t} = 0.02 \)</span> реалният лихвен процент надвишава равновесната си стойност също с <span class="math notranslate nohighlight">\( 0.02 \)</span> (2 процентни пункта).</p></li>
+</ol>
+<p>На колко ще бъде равно отклонението от потенциалното производство при шок в предлагането от 0.01?</p>
+</section>
+</div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Решение</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">За изчисляване на отклонението от потенциалното производство <span class="math notranslate nohighlight">\( \hat{y}_t \)</span> използваме формулата</p>
+<div class="math notranslate nohighlight">
+\[\hat{y}_t = \frac{b}{b^2+\lambda}(\pi^T-\bar{\pi})-\frac{b}{b^2+\lambda}\varepsilon_{2,t},\]</div>
+<p class="sd-card-text">за прилагането на която ни трябва стойността на <span class="math notranslate nohighlight">\( \frac{b}{b^2+\lambda} \)</span>.</p>
+<p class="sd-card-text">Условие 1. означава, че <span class="math notranslate nohighlight">\( \bar{\pi} - \pi^T = 0 \)</span>.</p>
+<p class="sd-card-text">За пресмятането на <span class="math notranslate nohighlight">\( \frac{b}{b^2+\lambda} \)</span> използваме формулата</p>
+<div class="math notranslate nohighlight">
+\[r_t = \bar{r}+\frac{b}{a(b^2+\lambda)}(\bar{\pi}-\pi^T)+\frac{1}{a}\varepsilon_{1,t}+\frac{b}{a(b^2+\lambda)}\varepsilon_{2,t}. \]</div>
+<p class="sd-card-text">Тази формула, заедно с условие 2., дава</p>
+<div class="math notranslate nohighlight">
+\[ r_t-\bar{r} = \frac{1}{a}\varepsilon_{1,t} \Longleftrightarrow 0.02 = \frac{1}{a} 0.01 \Rightarrow a = 0.5. \]</div>
+<p class="sd-card-text">Аналогично, от условие 3. получаваме</p>
+<div class="math notranslate nohighlight">
+\[ r_t-\bar{r} = \frac{1}{a}\frac{b}{b^2+\lambda}\varepsilon_{2,t} \Longleftrightarrow 0.02 = 2 \frac{b}{b^2+\lambda} 0.02 \Rightarrow \frac{b}{b^2+\lambda} = 0.5. \]</div>
+<p class="sd-card-text">В конкретния случай за <span class="math notranslate nohighlight">\( \hat{y}_t \)</span> имаме</p>
+<div class="math notranslate nohighlight">
+\[ \hat{y}_t = -0.5 \times 0.01 = -0.005 \text{, т.е. } -0.5\%. \]</div>
+</div>
+</details><br>
+<div class="exercise problem admonition" id="SRun_closed-exercise-19">
+
+<p class="admonition-title"><span class="caption-number">Exercise 58 </span></p>
+<section id="exercise-content">
+<p>За IS-MP-PC модел с провеждане на парична политика при използване на квадратична функция на загубите е известно, че:</p>
+<ul class="simple">
+<li><p>Инфлационната цел на централната банка и равновесната инфлация са равни.</p></li>
+<li><p>При шок в търсенето <span class="math notranslate nohighlight">\( \varepsilon_{1,t} = 0.02 \)</span> реалният лихвен процент надвишава равновесната си стойност с <span class="math notranslate nohighlight">\( 0.04 \)</span> (4 процентни пункта).</p></li>
+<li><p>При шок в предлагането <span class="math notranslate nohighlight">\( \varepsilon_{2,t} = 0.01 \)</span> реалният лихвен процент надвишава равновесната си стойност също с <span class="math notranslate nohighlight">\( 0.01 \)</span> (1 процентен пункт).</p></li>
+<li><p>Кривата на Филипс има вида</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[ \pi_t = \bar{\pi} + \hat{y}_t + \varepsilon_{2,t}. \]</div>
+<p>С колко ще се отклонява инфлацията от равновесната си стойност при шок в предлагането от 0.02?</p>
+</section>
+</div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Решение</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Изразът, задаващ отклонението на инфлацията от равновесната ѝ стойност, т.е. <span class="math notranslate nohighlight">\( \pi_t-\bar{\pi} \)</span>, е</p>
+<div class="math notranslate nohighlight">
+\[ \pi_t = \bar{\pi} + \frac{b^2}{b^2+\lambda}(\pi^T-\bar{\pi})+\left( 1-\frac{b^2}{b^2+\lambda} \right)\varepsilon_{2,t}. \]</div>
+<p class="sd-card-text">Първото условие на задачата означава, че <span class="math notranslate nohighlight">\(\pi^T  - \bar{\pi} = 0 \)</span>, следователно горният израз се опростява до</p>
+<div class="math notranslate nohighlight">
+\[ \pi_t - \bar{\pi} = \left( 1-\frac{b^2}{b^2+\lambda} \right)\varepsilon_{2,t} = \left( 1-b\frac{b}{b^2+\lambda} \right)\varepsilon_{2,t} \qquad (*)\]</div>
+<p class="sd-card-text">Отклонението на реалния лихвен процент от равновесието се задава от формулата</p>
+<div class="math notranslate nohighlight">
+\[ r_t = \bar{r}+\frac{b}{a(b^2+\lambda)}(\bar{\pi}-\pi^T)+\frac{1}{a}\varepsilon_{1,t}+\frac{b}{a(b^2+\lambda)}\varepsilon_{2,t}, \]</div>
+<p class="sd-card-text">която в нашия случай има по-простия вид</p>
+<div class="math notranslate nohighlight">
+\[ r_t - \bar{r} = \frac{1}{a}\varepsilon_{1,t}+\frac{b}{a(b^2+\lambda)}\varepsilon_{2,t}. \]</div>
+<p class="sd-card-text">За този израз второто условие ни дава</p>
+<div class="math notranslate nohighlight">
+\[ r_t-\bar{r} = \frac{1}{a}\varepsilon_{1,t} \Longleftrightarrow 0.04 = \frac{1}{a} 0.02 \Rightarrow a = 0.5. \]</div>
+<p class="sd-card-text">Аналогично, от третото условие имаме</p>
+<div class="math notranslate nohighlight">
+\[ r_t-\bar{r} = \frac{1}{a}\frac{b}{b^2+\lambda}\varepsilon_{2,t} \Longleftrightarrow 0.01 = 2 \frac{b}{b^2+\lambda} 0.01 \Rightarrow \frac{b}{b^2+\lambda} = 0.5. \]</div>
+<p class="sd-card-text">От четвъртото условие за кривата на Филипс имаме <span class="math notranslate nohighlight">\( b=1 \)</span>. Тогава, предвид <span class="math notranslate nohighlight">\( \frac{b}{b^2+\lambda} = 0.5 \)</span>, от <span class="math notranslate nohighlight">\((*)\)</span> получаваме</p>
+<div class="math notranslate nohighlight">
+\[  \pi_t - \bar{\pi} =  \left( 1-1 \times 0.5 \right) \times 0.02 = 0.01. \]</div>
+</div>
+</details><br>
+<div class="exercise problem admonition" id="SRun_closed-exercise-20">
+
+<p class="admonition-title"><span class="caption-number">Exercise 59 </span></p>
+<section id="exercise-content">
+<p>Дадена икономика започва да прегрява поради засилено инвестиционно търсене и съответно разходи. Какви мерки на икономическата политика могат да се приложат, за да се противодейства на този проблем?</p>
+</section>
+</div>
+<br>
+<div class="exercise problem admonition" id="SRun_closed-exercise-21">
+
+<p class="admonition-title"><span class="caption-number">Exercise 60 </span></p>
+<section id="exercise-content">
+<p>Разглеждаме затворена икономика, която се описва с IS-MP-PC модел с просто правило за парична политика. За нея е известно, че:</p>
+<ul class="simple">
+<li><p>Инфлационната цел на централната банка е равна на равновесната инфлация.</p></li>
+<li><p>В простото правило коефициентът пред отклонението от потенциалното производство има стойност <span class="math notranslate nohighlight">\(2\)</span>.</p></li>
+<li><p>При шок отклонението от потенциалното производство е имало стойност <span class="math notranslate nohighlight">\(0.01\)</span>, отклонението на инфлацията от равновесната е било <span class="math notranslate nohighlight">\(0.02\)</span>, а реалният лихвен процент се е увеличил спрямо равновесната си стойност с <span class="math notranslate nohighlight">\(0.04\)</span>.</p></li>
+</ul>
+<p>На колко е равен коефициентът пред отклонението на инфлацията от инфлационната цел на централната банка в простото правило за провеждане на парична политика?</p>
+<p>От страна на търсенето или на предлагането е шокът?</p>
+</section>
+</div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Решение</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">От условието:</p>
+<ul class="simple">
+<li><p class="sd-card-text"><span class="math notranslate nohighlight">\(\pi^T=\bar{\pi}\)</span></p></li>
+<li><p class="sd-card-text"><span class="math notranslate nohighlight">\(e=2\)</span></p></li>
+<li><p class="sd-card-text"><span class="math notranslate nohighlight">\(\hat{y}_t = 0.01\)</span></p></li>
+<li><p class="sd-card-text"><span class="math notranslate nohighlight">\(\pi_t-\pi^T = \pi_t-\bar{\pi} = 0.02\)</span></p></li>
+<li><p class="sd-card-text"><span class="math notranslate nohighlight">\(r_t-\bar{r} = 0.04\)</span></p></li>
+</ul>
+<p class="sd-card-text">Простото правило</p>
+<div class="math notranslate nohighlight">
+\[ r_t-\bar{r} = d (\pi_t-\bar{\pi})+e\hat{y}_t \]</div>
+<p class="sd-card-text">има вида</p>
+<div class="math notranslate nohighlight">
+\[ 0.04 = d \times 0.02 + 2 \times 0.01 \qquad \Rightarrow \qquad d=1.\]</div>
+<p class="sd-card-text">И инфлацията, и производството са по-високи от равновесните си стойности, следователно става дума за шок от страна на търсенето.</p>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text">Отговори</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text"><a class="reference internal" href="#ogap1"><span class="std std-numref">Exercise 40</span></a>:<code class="docutils literal notranslate">&#160;&#160; <span class="pre">2%,</span> <span class="pre">209.9,</span> <span class="pre">216.7</span></code></p>
@@ -453,6 +740,8 @@
 <p class="sd-card-text"><a class="reference internal" href="#pc2"><span class="std std-numref">Exercise 46</span></a>:<code class="docutils literal notranslate">&#160;&#160; <span class="pre">2%</span></code></p>
 <p class="sd-card-text"><a class="reference internal" href="#pc3"><span class="std std-numref">Exercise 47</span></a>:<code class="docutils literal notranslate">&#160;&#160; <span class="pre">Не</span> <span class="pre">е</span> <span class="pre">имало</span> <span class="pre">шок</span> <span class="pre">от</span> <span class="pre">страна</span> <span class="pre">на</span> <span class="pre">предлагането.</span></code></p>
 <p class="sd-card-text"><a class="reference internal" href="#constrir1"><span class="std std-numref">Exercise 50</span></a>:<code class="docutils literal notranslate">&#160;&#160; <span class="pre">Първият</span> <span class="pre">шок</span> <span class="pre">е</span> <span class="pre">от</span> <span class="pre">страна</span> <span class="pre">на</span> <span class="pre">предлагането,</span> <span class="pre">а</span> <span class="pre">вторият</span> <span class="pre">от</span> <span class="pre">страна</span> <span class="pre">на</span> <span class="pre">търсенето.</span></code></p>
+<p class="sd-card-text"><a class="reference internal" href="#ismppc1"><span class="std std-numref">Exercise 53</span></a>:<code class="docutils literal notranslate">&#160;&#160; <span class="pre">Шокът</span> <span class="pre">е</span> <span class="pre">от</span> <span class="pre">страна</span> <span class="pre">на</span> <span class="pre">предлагането.</span> <span class="pre">Фигурира</span> <span class="pre">в</span> <span class="pre">PC</span> <span class="pre">връзката.</span></code></p>
+<p class="sd-card-text"><a class="reference internal" href="#ismppc2"><span class="std std-numref">Exercise 56</span></a>:<code class="docutils literal notranslate">&#160;&#160; </code><span class="math notranslate nohighlight">\(\lambda = 1\)</span></p>
 </div>
 </details></section>
 </section>
