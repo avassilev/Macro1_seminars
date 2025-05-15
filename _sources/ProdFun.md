@@ -193,7 +193,7 @@ $ L=30 $ и $ K=50 $ имаме пределен продукт на труда 
 
 {ref}`pf_mpl1`: 
 - $MPL = (1-\alpha)A K^\alpha L^{-\alpha}, \quad MPK = \alpha A K^{\alpha-1} L^{1-\alpha}$
-- $MPL = b, \quad MPK = b$
+- $MPL = b, \quad MPK = a$
 - $MPL =  (1-\alpha)A L^{\rho-1} [\alpha K^\rho + (1-\alpha)L^{\rho}]^{\frac{1-\rho}{\rho}}$, 
   $MPK =  \alpha A K^{\rho-1} [\alpha K^\rho + (1-\alpha)L^{\rho}]^{\frac{1-\rho}{\rho}}$
 
