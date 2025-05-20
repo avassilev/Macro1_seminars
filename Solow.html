@@ -1,0 +1,598 @@
+
+<!DOCTYPE html>
+
+
+<html lang="bg" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Модел на Солоу-Суон &#8212; Ръководство за упражнения по Макроикономика 1</title>
+    <script src="https://unpkg.com/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://unpkg.com/tippy.js@6.3.1/dist/tippy-bundle.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    
+        <script>
+            MathJax = {
+            loader: {load: ['[tex]/boldsymbol', '[tex]/textmacros']},
+            tex: {
+                packages: {'[+]': ['boldsymbol', 'textmacros']},
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                processEscapes: true,
+                macros: {
+                    "argmax" : "arg\\,max",
+                    "argmin" : "arg\\,min",
+                    "col"    : "col",
+                    "Span"   :  "span",
+                    "epsilon": "\\varepsilon",
+                    "EE": "\\mathbb{E}",
+                    "PP": "\\mathbb{P}",
+                    "RR": "\\mathbb{R}",
+                    "NN": "\\mathbb{N}",
+                    "ZZ": "\\mathbb{Z}",
+                    "aA": "\\mathcal{A}",
+                    "bB": "\\mathcal{B}",
+                    "cC": "\\mathcal{C}",
+                    "dD": "\\mathcal{D}",
+                    "eE": "\\mathcal{E}",
+                    "fF": "\\mathcal{F}",
+                    "gG": "\\mathcal{G}",
+                    "hH": "\\mathcal{H}",
+                }
+            },
+            svg: {
+                fontCache: 'global',
+                scale: 0.92,
+                displayAlign: "center",
+            },
+            };
+        </script>
+    
+    
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b76e3c8a" />
+    <link rel="stylesheet" href="_static/styles/quantecon-book-theme.css?digest=bd0785fbb14d8d2bd4d9ae501d79ed8d3bc089ec" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/exercise.css?v=982b99e0" />
+    <link rel="stylesheet" type="text/css" href="_static/proof.css?v=ca93fcec" />
+    <link rel="stylesheet" type="text/css" href="_static/custom.css?v=758e38f5" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+
+    <script src="_static/documentation_options.js?v=85e8d2cb"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js?v=4a39c7ea"></script>
+    <script src="_static/scripts/quantecon-book-theme.js?digest=d9faaf6c4b57726f74ba012412af1f5681bdff87"></script>
+    <script src="_static/custom.js?v=6bcefc46"></script>
+    <script src="_static/translations.js?v=91a661d6"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'Solow';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Производствени функции" href="ProdFun.html" />
+
+<!-- Normal Meta Tags -->
+<meta name="author" context="Андрей Василев" />
+<meta name="keywords" content="" />
+<meta name="description" content=Модел на Солоу-Суон  1. Стационарно състояние    Разглеждаме модел на Солоу-Суон в непрекъснато време. За този модел производствената функция в интензивна форма />
+
+<!-- Twitter tags -->
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@" />
+<meta name="twitter:title" content="Модел на Солоу-Суон"/>
+<meta name="twitter:description" content="Модел на Солоу-Суон  1. Стационарно състояние    Разглеждаме модел на Солоу-Суон в непрекъснато време. За този модел производствената функция в интензивна форма">
+<meta name="twitter:creator" content="@">
+<meta name="twitter:image" content="">
+
+<!-- Opengraph tags -->
+<meta property="og:title" content="Модел на Солоу-Суон" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="None" />
+<meta property="og:image" content="" />
+<meta property="og:description" content="Модел на Солоу-Суон  1. Стационарно състояние    Разглеждаме модел на Солоу-Суон в непрекъснато време. За този модел производствената функция в интензивна форма" />
+<meta property="og:site_name" content="Ръководство за упражнения по Макроикономика 1" />
+<meta name="theme-color" content="#ffffff" />
+
+  </head>
+<body>
+
+<!-- Override QuantEcon theme colors -->
+
+    <span id="top"></span>
+
+    <div class="qe-wrapper">
+
+        <div class="qe-main">
+
+            <div class="qe-page" id=Solow>
+
+                <div class="qe-page__toc">
+
+                    <div class="inner">
+
+                        
+
+
+                        <nav id="bd-toc-nav" class="qe-page__toc-nav">
+                            
+                            <p class="logo">
+                                
+                            </p>
+
+                            <p class="powered">Powered by <a href="https://jupyterbook.org/">Jupyter Book</a></p>
+
+                        </nav>
+
+                        <div class="qe-page__toc-footer">
+                            
+                            
+                            <p><a href="#top"><strong>Back to top</strong></a></p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="qe-page__header">
+
+                    <div class="qe-page__header-copy">
+
+                        <p class="qe-page__header-heading"><a href="intro.html">Ръководство за упражнения по Макроикономика 1</a></p>
+
+                        <p class="qe-page__header-subheading">Модел на Солоу-Суон</p>
+
+                    </div>
+                    <!-- length 2, since its a string and empty dict has length 2 - {} -->
+                        <p class="qe-page__header-authors" font-size="18">Андрей Василев</p>
+
+
+                </div> <!-- .page__header -->
+
+
+
+                
+                <main class="qe-page__content" role="main">
+                    
+                    <div>
+                        
+  <section class="tex2jax_ignore mathjax_ignore" id="id1">
+<h1>Модел на Солоу-Суон<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
+<div class="exercise problem admonition" id="Solow-exercise-0">
+
+<p class="admonition-title"><span class="caption-number">Exercise 84 </span></p>
+<section id="exercise-content">
+<p>Разглеждаме модел на Солоу-Суон в непрекъснато време. За този модел производствената функция в интензивна форма има вида <span class="math notranslate nohighlight">\( k^{\frac{1}{2}} \)</span>, нормата на спестяване е <span class="math notranslate nohighlight">\( 0.1 \)</span>, темпът на изменение на работната сила е <span class="math notranslate nohighlight">\( 0.005 \)</span> и нормата на амортизация на капитала е <span class="math notranslate nohighlight">\( 0.015 \)</span>. На колко е равна равновесната стойност на капитала на глава от населението?</p>
+</section>
+</div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Решение</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Търсим равновесната стойност на <span class="math notranslate nohighlight">\( k \)</span>, т.е. стойността <span class="math notranslate nohighlight">\( k_0 \)</span>, за която <span class="math notranslate nohighlight">\( \dot{k}=0 \)</span>. От основното уравнение на модела имаме</p>
+<div class="math notranslate nohighlight">
+\[0 = sf(k_0) -(n+\delta)k_0 = 0.1 k_0^{\frac{1}{2}} - (0.005+0.015)k^* \Longrightarrow 0.1 k_0^{\frac{1}{2}} = 0.02 k_0 \Longrightarrow k_0 = 25 .\]</div>
+</div>
+</details><br>
+<div class="exercise problem admonition" id="solow1">
+
+<p class="admonition-title"><span class="caption-number">Exercise 85 </span></p>
+<section id="exercise-content">
+<p>Разглеждаме модел на Солоу-Суон в непрекъснато време. За този модел производствената функция в интензивна форма има вида <span class="math notranslate nohighlight">\( k^{\frac{1}{2}} \)</span>, нормата на спестяване е <span class="math notranslate nohighlight">\( 0.09 \)</span>, нормата на амортизация на капитала е <span class="math notranslate nohighlight">\( 0.03 \)</span> и равновесната стойност на капитала на глава от населението е <span class="math notranslate nohighlight">\( 9 \)</span>. На колко е равен темпът на изменение на работната сила?</p>
+</section>
+</div>
+<br>
+<div class="exercise problem admonition" id="solow2">
+
+<p class="admonition-title"><span class="caption-number">Exercise 86 </span></p>
+<section id="exercise-content">
+<p>Разглеждаме модел на Солоу-Суон в непрекъснато време за затворена икономика, която се описва с производствената технология</p>
+<div class="math notranslate nohighlight">
+\[Y(K,L)=\dfrac{1}{2}K^{\frac{1}{2}}L^{\frac{1}{2}}.\]</div>
+<p>Икономиката се характеризира с темп на нарастване на работната сила от <span class="math notranslate nohighlight">\(0.01\)</span>, норма на амортизация <span class="math notranslate nohighlight">\(0.03\)</span> и норма на спестяване <span class="math notranslate nohighlight">\(0.16\)</span>. Пресметнете стойностите на капитала на единица труд върху равновесната траектория за времена <span class="math notranslate nohighlight">\( t = 5 \)</span> и <span class="math notranslate nohighlight">\( t = 10 \)</span></p>
+</section>
+</div>
+<br>
+<div class="exercise problem admonition" id="solow3">
+
+<p class="admonition-title"><span class="caption-number">Exercise 87 </span></p>
+<section id="exercise-content">
+<p>Даден е вариант на модела на Солоу-Суон с фиксирани параметри, за който изменяме само началните условия за капитала на глава от населението. Разглеждаме резултатите за две начални условия, <span class="math notranslate nohighlight">\( k_{0,1} \)</span> и <span class="math notranslate nohighlight">\( k_{0,2} \)</span>, за които е известно, че <span class="math notranslate nohighlight">\( k_{0,1} &lt; k_{0,2} \)</span>. Как се сравняват стационарните състояния, които ще бъдат достигнати при всяко от тези начални условия?</p>
+</section>
+</div>
+<br>
+<div class="exercise problem admonition" id="Solow-exercise-4">
+
+<p class="admonition-title"><span class="caption-number">Exercise 88 </span></p>
+<section id="exercise-content">
+<p>Разглеждаме модел на Солоу-Суон, за който производствената функция в интензивна форма е <span class="math notranslate nohighlight">\(f(k) = k^{\alpha}\)</span>. Изчислете стойността на нормата за спестяване, за която в равновесие ще се получи максимално потребление.</p>
+</section>
+</div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Решение</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Задачата изисква да изчислим стойността на <span class="math notranslate nohighlight">\(s\)</span> според ,,златното правило‘‘ за натрупване на капитал. За целта първо пресмятаме капитала в стационарното състояние:</p>
+<div class="math notranslate nohighlight">
+\[ s k^\alpha = (n+\delta)k \quad \Rightarrow \quad k_0(s) = \left( \frac{s}{n+\delta} \right)^{\frac{1}{1-\alpha}}. \]</div>
+<p class="sd-card-text">Условието за максимизиране на стационарното потребление е</p>
+<div class="math notranslate nohighlight">
+\[ f'(k_0(s)) = n+\delta, \]</div>
+<p class="sd-card-text">което в конкретния случай има вида</p>
+<div class="math notranslate nohighlight">
+\[ \alpha \left( \frac{s}{n+\delta} \right)^{\frac{\alpha-1}{1-\alpha}} = n+\delta \quad \Rightarrow \quad s_{\text{gold}} = \alpha . \]</div>
+</div>
+</details><br>
+<div class="exercise problem admonition" id="solow4">
+
+<p class="admonition-title"><span class="caption-number">Exercise 89 </span></p>
+<section id="exercise-content">
+<p>В икономика, в която нормата на спестяване е била различна от оптималната, настъпва структурна промяна и нормата на спестяване става точно равна на тази, предписвана от ,,златното правило‘‘ за натрупване на капитал, <span class="math notranslate nohighlight">\(s_{\text{gold}}\)</span>. Известно е, че в прехода към новото стационарно състояние потреблението първо е намаляло, а след известно време е започнало да нараства, доближавайки се до равновесната стойност. Може ли от тази информация да се направи заключение дали първоначалната норма на спесяване е била по-голяма или по-малка от <span class="math notranslate nohighlight">\(s_{\text{gold}}\)</span>?</p>
+</section>
+</div>
+<br>
+<div class="exercise problem admonition" id="Solow-exercise-6">
+
+<p class="admonition-title"><span class="caption-number">Exercise 90 </span></p>
+<section id="exercise-content">
+<p>Разглеждаме модел на Солоу-Суон в непрекъснато време. Известно е, че стойността на капитала на един зает е <span class="math notranslate nohighlight">\( 12 \)</span>, като за тази стойност имаме темп на растеж на капитала на един зает от <span class="math notranslate nohighlight">\( 0.05 \)</span> и производство на един зает от <span class="math notranslate nohighlight">\( 4 \)</span>. Темпът на нарастване на работната сила е <span class="math notranslate nohighlight">\( 0.01 \)</span> и нормата на амортизиране на капитала е <span class="math notranslate nohighlight">\( 0.02 \)</span>. Намерете нормата на спестяване за тази икономика.</p>
+</section>
+</div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Решение</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Имаме уравнението за темпа на растеж на <span class="math notranslate nohighlight">\(k\)</span></p>
+<div class="math notranslate nohighlight">
+\[ \gamma_k = s \frac{f(k)}{k} -(n+\delta).\]</div>
+<p class="sd-card-text">От условието знаем, че <span class="math notranslate nohighlight">\( \gamma_k = 0.05 \)</span>, <span class="math notranslate nohighlight">\( n=0.01 \)</span>, <span class="math notranslate nohighlight">\( \delta = 0.02 \)</span>, <span class="math notranslate nohighlight">\( k=12 \)</span>, <span class="math notranslate nohighlight">\( f(k)=4 \)</span>. Следователно <span class="math notranslate nohighlight">\( s=0.24 \)</span>.</p>
+</div>
+</details><br>
+<div class="exercise problem admonition" id="Solow-exercise-7">
+
+<p class="admonition-title"><span class="caption-number">Exercise 91 </span></p>
+<section id="exercise-content">
+<p>За вариант на модела на Солоу-Суон в непрекъснато време е известно, че темпът на растеж на капитала на един зает е равен на <span class="math notranslate nohighlight">\(0.06\)</span>, нормата на амортизиране на капитала е <span class="math notranslate nohighlight">\( 0.03 \)</span>, темпът на нарастване на работната сила е <span class="math notranslate nohighlight">\( 0.02 \)</span> и нормата на спестяване е <span class="math notranslate nohighlight">\(0.2\)</span>. Изчислете темпа на нарастване на капитала в абсолютно изражение.</p>
+</section>
+</div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Решение</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<div class="math notranslate nohighlight">
+\[ \gamma_К = \gamma_k + n = 0.06 + 0.02 = 0.08.\]</div>
+<p class="sd-card-text">Останалата информация в условието е излишна.</p>
+</div>
+</details><br>
+<div class="exercise problem admonition" id="Solow-exercise-8">
+
+<p class="admonition-title"><span class="caption-number">Exercise 92 </span></p>
+<section id="exercise-content">
+<p>Нека дадена затворена икономика се описва с производствена функция в интензивна форма <span class="math notranslate nohighlight">\(f(k)=\sqrt{k}\)</span>. За тази икономика нормата на спестяване е <span class="math notranslate nohighlight">\(0.2\)</span>, растежът на работната сила е <span class="math notranslate nohighlight">\(0.01\)</span>, нормата на амортизиране на капитала е <span class="math notranslate nohighlight">\( 0.05 \)</span>. На колко е равен темпът на растеж на производството на глава от населението, ако капиталът на глава от населението има стойност <span class="math notranslate nohighlight">\(4\)</span>?</p>
+</section>
+</div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Решение</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Имаме</p>
+<div class="math notranslate nohighlight">
+\[ \gamma_y = s f'(k) - (n+\delta)\frac{k f'(k)}{f(k)}. \]</div>
+<p class="sd-card-text">От условието на задачата можем да пресметнем <span class="math notranslate nohighlight">\(f'(k) = \frac{1}{2}\frac{1}{\sqrt{k}}\)</span>. Също така, имаме <span class="math notranslate nohighlight">\(n=0.01\)</span>, <span class="math notranslate nohighlight">\(\delta=0.05\)</span>, <span class="math notranslate nohighlight">\(s=0.2\)</span> и <span class="math notranslate nohighlight">\(k=4\)</span>.</p>
+<p class="sd-card-text">Тогава</p>
+<div class="math notranslate nohighlight">
+\[ \gamma_y = 0.2 \frac{1}{2} \frac{1}{\sqrt{4}} - (0.01+0.05) 4 \frac{1}{2} \frac{1}{\sqrt{4}} \frac{1}{\sqrt{4}} = 0.02. \]</div>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Отговори</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text"><a class="reference internal" href="#solow1"><span class="std std-numref">Exercise 85</span></a>:<code class="docutils literal notranslate">&#160;&#160; <span class="pre">0</span></code></p>
+<p class="sd-card-text"><a class="reference internal" href="#solow2"><span class="std std-numref">Exercise 86</span></a>:<code class="docutils literal notranslate">&#160;&#160; </code><span class="math notranslate nohighlight">\(k = 4\)</span> <code class="docutils literal notranslate"><span class="pre">за</span> <span class="pre">произволно</span> <span class="pre">време</span></code> <span class="math notranslate nohighlight">\(t\)</span></p>
+<p class="sd-card-text"><a class="reference internal" href="#solow3"><span class="std std-numref">Exercise 87</span></a>:<code class="docutils literal notranslate">&#160;&#160; <span class="pre">Стойностите</span> <span class="pre">са</span> <span class="pre">равни</span> <span class="pre">(всъщност</span> <span class="pre">става</span> <span class="pre">дума</span> <span class="pre">за</span> <span class="pre">едно</span> <span class="pre">стационарно</span> <span class="pre">състояние,</span> <span class="pre">понеже</span> <span class="pre">моделът</span> <span class="pre">е</span> <span class="pre">глобално</span> <span class="pre">асимптотично</span> <span class="pre">устойчив)</span></code></p>
+<p class="sd-card-text"><a class="reference internal" href="#solow4"><span class="std std-numref">Exercise 89</span></a>:<code class="docutils literal notranslate">&#160;&#160; <span class="pre">Първоначалната</span> <span class="pre">стойност</span> <span class="pre">на</span> <span class="pre">нормата</span> <span class="pre">на</span> <span class="pre">спестяване</span> <span class="pre">е</span> <span class="pre">била</span> <span class="pre">по-ниска</span> <span class="pre">от</span> <span class="pre">оптималната.</span></code></p>
+</div>
+</details></section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                    </div>
+                    
+                </main> <!-- .page__content -->
+                
+
+
+                <footer class="qe-page__footer">
+
+                    <p><a href="https://creativecommons.org/licenses/by-sa/4.0/"><img src="https://licensebuttons.net/l/by-sa/4.0/80x15.png"></a></p>
+
+                    <p>Creative Commons License &ndash; This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International.</p>
+
+                    <p>A theme by <a href="https://quantecon.org">QuantEcon</a></p>
+
+                </footer> <!-- .page__footer -->
+
+            </div> <!-- .page -->
+
+            
+
+            
+            <div class="qe-sidebar bd-sidebar inactive" id="site-navigation">
+
+                <div class="qe-sidebar__header">
+
+
+                    Contents
+
+                </div>
+
+                <nav class="qe-sidebar__nav" id="qe-sidebar-nav" aria-label="Main navigation">
+                    <ul class="nav bd-sidenav nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="intro.html">
+   Ръководство за упражнения по Макроикономика 1
+  </a>
+ </li>
+</ul>
+<ul class="current nav bd-sidenav nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="Micro_to_macro.html">
+   Основни микроикономически постановки и макроикономическите им следствия
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="GDP.html">
+   Брутен вътрешен продукт и измерители на доход
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Inflation.html">
+   Ценови индекси и инфлация
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Labour.html">
+   Пазар на труда
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Fin_interm.html">
+   Финансово посредничество
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="SRun_closed.html">
+   Краткосрочни модели на затворени икономики
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="SRun_open.html">
+   Краткосрочни модели на отворени икономики
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ProdFun.html">
+   Производствени функции
+  </a>
+ </li>
+ <li class="toctree-l1 current active active">
+  <a class="current reference internal" href="#">
+   Модел на Солоу-Суон
+  </a>
+ </li>
+</ul>
+
+                </nav>
+
+                <div class="qe-sidebar__footer">
+
+                </div>
+
+            </div> <!-- .sidebar -->
+            
+        </div> <!-- .main -->
+
+        <div class="qe-toolbar">
+
+            <div class="qe-toolbar__inner">
+
+                <ul class="qe-toolbar__main">
+                    <li data-tippy-content="Table of Contents" class="btn__sidebar"><i data-feather="menu"></i></li>
+                    <li data-tippy-content="Home"><a href="intro.html"><i data-feather="home"></i></a></li>
+                    <li class="btn__qelogo"><a href="" title=""><span class="show-for-sr"></span></a></li>
+                </ul>
+
+                <ul class="qe-toolbar__links">
+                    <li class="btn__search">
+                        <form action="search.html" method="get">
+                            <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" accesskey="k">
+                            <i data-feather="search" id="search-icon"></i>
+                        </form>
+                    </li>
+                    <li data-tippy-content="Fullscreen" class="btn__fullscreen"><i data-feather="maximize"></i></li>
+                    <li data-tippy-content="Increase font size" class="btn__plus"><i data-feather="plus-circle"></i></li>
+                    <li data-tippy-content="Decrease font size" class="btn__minus"><i data-feather="minus-circle"></i></li>
+                    <li data-tippy-content="Change contrast" class="btn__contrast"><i data-feather="sunset"></i></li>
+                        <li data-tippy-content="Download PDF" onClick="window.print()"><i data-feather="file"></i></li>
+                    <!--
+                    # Enable if looking for link to specific document hosted on GitHub
+                    <li data-tippy-content="View Source"><a target="_blank" href="https://github.com/executablebooks/jupyter-book/Solow.md" download><i data-feather="github"></i></a></li>
+                    -->
+                    <li data-tippy-content="View Source"><a target="_blank" href="https://github.com/executablebooks/jupyter-book" download><i data-feather="github"></i></a></li>
+                </ul>
+
+            </div>
+
+        </div> <!-- .toolbar -->
+        <div id="downloadPDFModal" style="display: none;">
+            <ul class="pdf-options" style="display: block;">
+                <li class="download-pdf-book" onClick="window.print()">
+                    <p>Lecture (PDF)</p>
+                </li>
+                <li class="download-pdf-file">
+                    <a href="" download><p>Book (PDF)</p></a>
+                </li>
+            </ul>
+        </div>
+        <div id="settingsModal" style="display: none;">
+            <p class="modal-title"> Notebook Launcher </p>
+            <div class="modal-desc">
+            <p>
+                Choose public or private cloud service for "Launch" button.
+            </p>
+            </div>
+            <p class="modal-subtitle">Select a server</p>
+            <ul class="modal-servers">
+            <li class="active launcher-public">
+                <span class="label">Public</span>
+                <select id="launcher-public-input">
+                
+                </select>
+                <i class="fas fa-check-circle"></i>
+            </li>
+            <li class="launcher-private">
+                <span class="label">Private</span>
+                <input type="text" id="launcher-private-input" data-repourl="" data-urlpath="" data-branch=>
+                <i class="fas fa-check-circle"></i>
+            </li>
+            </ul>
+            <p class="launch"><a href="" id="advancedLaunchButton" target="_blank">Launch Notebook</a></p>
+            <script>
+                // QuantEcon Notebook Launcher
+                const launcherTypeElements = document.querySelectorAll('#settingsModal .modal-servers li');
+                // Highlight the server type if previous selection exists
+                if (typeof localStorage.launcherType !== 'undefined') {
+                  for (var i = 0; i < launcherTypeElements.length; i++) {
+                    launcherTypeElements[i].classList.remove('active');
+                    if ( launcherTypeElements[i].classList.contains(localStorage.launcherType) ) {
+                      launcherTypeElements[i].classList.add('active');
+                    }
+                  }
+                }
+                // Highlight server type on click and set local storage value
+                for (var i = 0; i < launcherTypeElements.length; i++) {
+                  launcherTypeElements[i].addEventListener('click', function() {
+                    for (var j = 0; j < launcherTypeElements.length; j++) {
+                      launcherTypeElements[j].classList.remove('active');
+                    }
+                    this.classList.add('active');
+                    if ( this.classList.contains('launcher-private') ) {
+                      localStorage.launcherType = 'launcher-private';
+                    } else if ( this.classList.contains('launcher-public') ) {
+                      localStorage.launcherType = 'launcher-public';
+                    }
+                    setLaunchServer();
+                  })
+                }
+                const launcherPublic = document.getElementById('launcher-public-input');
+                const launcherPrivate = document.getElementById('launcher-private-input');
+                const pageName = "Solow";
+                const repoURL = "";
+                const urlPath = "";
+                const branch = ""
+                const launchNotebookLink = document.getElementById('advancedLaunchButton');
+
+                // Highlight public server option if previous selection exists
+                if (typeof localStorage.launcherPublic !== 'undefined') {
+                  launcherPublic.value = localStorage.launcherPublic;
+                }
+                // Update local storage upon public server selection
+                launcherPublic.addEventListener('change', (event) => {
+                  setLaunchServer();
+                });
+                // Populate private server input if previous entry exists
+                if (typeof localStorage.launcherPrivate !== 'undefined') {
+                  launcherPrivate.value = localStorage.launcherPrivate;
+                }
+                // Update local storage when a private server is entered
+                launcherPrivate.addEventListener('input', (event) => {
+                  setLaunchServer();
+                });
+
+                // Function to update the "Launch Notebook" link href
+                function setLaunchServer() {
+                  launchNotebookLink.removeAttribute("style")
+                  if ( localStorage.launcherType == 'launcher-private' ) {
+                    let repoPrefix = "/user-redirect/git-pull?repo=" + repoURL + "&branch=" + branch + "&urlpath=" + urlPath;
+                    launcherPrivateValue = launcherPrivate.value
+                    if (!launcherPrivateValue) {
+                        launchNotebookLink.removeAttribute("href")
+                        launchNotebookLink.style.background = "grey"
+                        return
+                    }
+                    localStorage.launcherPrivate = launcherPrivateValue;
+                    privateServer = localStorage.launcherPrivate.replace(/\/$/, "")
+                    if (!privateServer.includes("http")) {
+                        privateServer = "http://" + privateServer
+                    }
+                    launchNotebookLinkURL = privateServer + repoPrefix;
+                  } else if ( localStorage.launcherType == 'launcher-public' ) {
+                    launcherPublicValue = launcherPublic.options[launcherPublic.selectedIndex].value;
+                    localStorage.launcherPublic = launcherPublicValue;
+                    launchNotebookLinkURL = localStorage.launcherPublic;
+                  }
+                  if (launchNotebookLinkURL) launchNotebookLink.href = launchNotebookLinkURL;
+                }
+                // Check if user has previously selected a server
+                if ( (typeof localStorage.launcherPrivate !== 'undefined') || (typeof localStorage.launcherPublic !== 'undefined') ) {
+                  setLaunchServer();
+                }
+                </script>
+
+        </div>
+
+    </div> <!-- .wrapper-->
+  </body>
+</html>
